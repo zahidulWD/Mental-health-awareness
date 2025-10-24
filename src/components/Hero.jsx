@@ -61,7 +61,7 @@ const Hero = () => {
           {/* banner card section */}
 {/* banner card section */}
 <div className="p-4">
-  <div className="-top-20 lg:right-8 relative flex flex-wrap justify-evenly max-w-[1080px] bg-[#D1E0AF] mx-auto rounded-xl p-4 mt-10">
+  <div className="-top-20 lg:right-8 relative flex flex-wrap justify-evenly max-w-[1080px] bg-[#D1E0AF] mx-auto rounded-xl p-4 mt-4">
   {/* card1 */}
   <div className="text-center p-2 flex-[1_1_250px]">
     <img src={endtoend} alt="end to end" className="inline-block mx-auto mb-2" />
