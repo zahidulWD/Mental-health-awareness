@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Tomas Trojan",
+    "role": "Psychotherapist",
+    "img": "https://i.ibb.co.com/fYL3QRBs/image-1.png",
+    "text": "The structured approach has helped me enormously. I used to feel at the mercy of my constraints, but now I have concrete tools to combat them."
+  },
+  {
+    "id": 2,
+    "name": "Matej Ptajak",
+    "role": "Therapist",
+    "img": "https://i.ibb.co.com/9HQ2LWkN/image-2.png",
+    "text": "The structured approach has helped me enormously. I used to feel at the mercy of my constraints, but now I have concrete tools to combat them. ERP planning is particularly helpful."
+  },
+  {
+    "id": 3,
+    "name": "Sarah Connor",
+    "role": "Clinical Psychologist",
+    "img": "https://i.ibb.co.com/TxYQHVD6/images.jpg",
+    "text": "ERP planning has been particularly helpful. The guidance and structure make treatment smooth and consistent."
+  },
+  {
+    "id": 4,
+    "name": "John Doe",
+    "role": "Behavioral Expert",
+    "img": "https://i.ibb.co.com/7xxDNnRr/credit-client.png",
+    "text": "OCD&me offers incredible guidance — I’ve seen measurable improvements in patients’ self-control and awareness."
+  },
+  {
+    "id": 5,
+    "name": "Emma Watson",
+    "role": "Therapist",
+    "img": "https://i.ibb.co.com/M5BswVLp/images-1.jpg",
+    "text": "I love how it simplifies complex treatment methods. It helps both professionals and patients stay on track."
+  },
+  {
+    "id": 6,
+    "name": "Michael Lee",
+    "role": "Clinical Researcher",
+    "img": "https://i.pravatar.cc/100?img=10",
+    "text": "The modern approach and smooth UI make OCD&me stand out. It's truly designed for patient success."
+  }
+]

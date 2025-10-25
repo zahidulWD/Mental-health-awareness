@@ -3,7 +3,8 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="container-custom">
-     <div className="hero bg-base-200 min-h-screen">
+      <h2>Contact section</h2>
+     {/* <div className="hero bg-base-200 min-h-screen">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
       <h1 className="text-5xl font-bold">Login now!</h1>
@@ -25,7 +26,7 @@ const Contact = () => {
       </div>
     </div>
   </div>
-</div>
+</div> */}
     </div>
   );
 };
