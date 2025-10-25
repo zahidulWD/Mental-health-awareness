@@ -8,9 +8,9 @@ import {
 
 import MainLayout from './layout/MainLayout.jsx';
 import Home from './pages/Home.jsx';
-import Prices from './pages/Prices.jsx';
 import Features from './pages/Features.jsx';
 import Contact from './pages/Contact.jsx';
+import PremiumSection from './pages/PremiumSection.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       },
        {
         path: "/prices",
-        element: <Prices></Prices>,
+        element: <PremiumSection></PremiumSection>,
       },
        {
         path: "/features",

@@ -1,0 +1,97 @@
+{
+  "monthly": [
+    {
+      "title": "THERAPISTS",
+      "price": "24.99€",
+      "oldPrice": "49.99€",
+      "color": "#4F7100",
+      "features": [
+        "Complete psychoeducation",
+        "Unlimited compulsory registration",
+        "Unlimited exposure exercises",
+        "Detailed progress tracking",
+        "Therapist mode"
+      ],
+      "unavailable": [
+        "Regular new content and updates",
+        "Premium support via email and chat"
+      ]
+    },
+    {
+      "title": "PREMIUM",
+      "price": "14.99€",
+      "oldPrice": "19.99€",
+      "color": "#4F7100",
+      "highlight": true,
+      "features": [
+        "Complete psychoeducation",
+        "Unlimited compulsory registration",
+        "Unlimited exposure exercises"
+      ],
+      "unavailable": [
+        "Detailed progress tracking",
+        "Therapist mode",
+        "Regular new content and updates",
+        "Premium support via email and chat"
+      ]
+    },
+    {
+      "title": "PLATINUM",
+      "price": "35.99€",
+      "oldPrice": "49.99€",
+      "color": "#4F7100",
+      "features": [
+        "Complete psychoeducation",
+        "Unlimited compulsory registration",
+        "Unlimited exposure exercises",
+        "Detailed progress tracking",
+        "Therapist mode",
+        "Regular new content and updates",
+        "Premium support via email and chat"
+      ]
+    }
+  ],
+  "annually": [
+    {
+      "title": "THERAPISTS",
+      "price": "249.99€",
+      "oldPrice": "299.99€",
+      "color": "#3E5A00",
+      "features": [
+        "All Monthly benefits",
+        "12-month full access",
+        "Extra therapist tools & reports",
+        "Exclusive therapist dashboard"
+      ],
+      "unavailable": ["Priority 1-on-1 support"]
+    },
+    {
+      "title": "PREMIUM",
+      "price": "159.99€",
+      "oldPrice": "219.99€",
+      "color": "#3E5A00",
+      "highlight": true,
+      "features": [
+        "All Monthly benefits",
+        "12-month unlimited access",
+        "Access to all therapy modules",
+        "Exclusive community group",
+        "Regular content updates"
+      ],
+      "unavailable": ["Therapist dashboard access"]
+    },
+    {
+      "title": "PLATINUM",
+      "price": "299.99€",
+      "oldPrice": "399.99€",
+      "color": "#3E5A00",
+      "features": [
+        "All Premium features",
+        "Lifetime access (one-time payment)",
+        "Unlimited therapy sessions",
+        "1-on-1 Therapist Support",
+        "Priority email & chat support"
+      ]
+    }
+  ]
+}

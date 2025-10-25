@@ -8,7 +8,16 @@
   .container-custom {
     @apply sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1220px] 2xl:max-w-[1340px] 3xl:max-w-[1520px] mx-auto px-5;
   }
+  .custon-swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    @apply !bg-[#FFC20F]
+  }
+
+  
+
 }
+
+
+
 
 
 
