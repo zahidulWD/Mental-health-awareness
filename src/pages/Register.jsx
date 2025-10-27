@@ -1,30 +1,94 @@
-import React from 'react';
+import React from "react";
 
 const Register = () => {
   return (
-  <div className="hero bg-base-200 container-custom">
-  <div className="hero-content flex-col lg:flex-row-reverse">
-    <div className="text-center lg:text-left">
-      <h1 className="text-5xl font-bold">Login now!</h1>
-      <p className="py-6">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
-      </p>
+    <div className="min-h-screen bg-base-200 flex items-center justify-center px-4">
+        {/* Form Section */}
+        <div className="card bg-base-100 w-full max-w-sm shadow-2xl">
+          <div className="card-body">
+            <h2 className="text-center text-2xl font-semibold mb-4">
+              Register Now
+            </h2>
+
+            <form className="space-y-4">
+              {/* Name */}
+              <div>
+                <label className="label">
+                  <span className="label-text font-medium">Full Name</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  className="input input-success w-full"
+                  required
+                />
+              </div>
+
+              {/* Email */}
+              <div>
+                <label className="label">
+                  <span className="label-text font-medium">Email</span>
+                </label>
+                <input
+                  type="email"
+                  placeholder="Enter Your Email"
+                  className="input input-success w-full"
+                  required
+                />
+              </div>
+
+              {/* Password */}
+              <div>
+                <label className="label">
+                  <span className="label-text font-medium">Password</span>
+                </label>
+                <input
+                  type="password"
+                  placeholder="Enter password"
+                  className="input input-success w-full"
+                  required
+                />
+              </div>
+
+              {/* Confirm Password */}
+              <div>
+                <label className="label">
+                  <span className="label-text font-medium">Confirm Password</span>
+                </label>
+                <input
+                  type="password"
+                  placeholder="Confirm password"
+                  className="input input-success w-full"
+                  required
+                />
+              </div>
+
+              {/* Forgot Password */}
+              <div className="text-right">
+                <a href="#" className="link link-hover text-sm text-primary">
+                  Forgot password?
+                </a>
+              </div>
+
+              {/* Register Button */}
+              <a className="btn bg-[#4F7100] w-full text-white">
+                Register
+              </a>
+            </form>
+
+            {/* Divider */}
+            <div className="divider">OR</div>
+
+            {/* Login Link */}
+            <p className="text-center text-sm">
+              Already have an account?{" "}
+              <a href="#" className="link text-primary font-medium">
+                Login here
+              </a>
+            </p>
+          </div>
+        </div>
     </div>
-    <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-      <div className="card-body">
-        <fieldset className="fieldset">
-          <label className="label">Email</label>
-          <input type="email" className="input" placeholder="Email" />
-          <label className="label">Password</label>
-          <input type="password" className="input" placeholder="Password" />
-          <div><a className="link link-hover">Forgot password?</a></div>
-          <a className="btn btn-neutral mt-4 text-white">Register Now</a>
-        </fieldset>
-      </div>
-    </div>
-  </div>
-</div>
   );
 };
 

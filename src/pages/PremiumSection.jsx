@@ -23,7 +23,7 @@ const PremiumSection = () => {
   }
 
   return (
-    <div className="py-4 bg-base-100">
+    <div className="bg-[#EDF1E6] py-10">
       <div className="container mx-auto px-4">
         {/* Title */}
         <div className="text-center mb-10 mt-4 lg:mt-20">
@@ -90,7 +90,7 @@ const Card = ({
     >
       <div className="card-body pt-10">
         {highlight && (
-          <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#F09E5433]/20 text-[#F5841E] font-semibold px-6 py-2 rounded-3xl text-sm shadow-sm">
+          <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#F09E5433]/40 text-[#f5790c] font-semibold px-6 py-2 rounded-3xl text-sm shadow-sm">
             RECOMMENDED
           </span>
         )}

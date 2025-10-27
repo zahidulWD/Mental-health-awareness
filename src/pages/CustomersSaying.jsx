@@ -16,14 +16,14 @@ const CustomersSaying = () => {
   }, []);
 
   return (
-    <div className="py-10 bg-base-100 overflow-hidden">
+    <div className="py-10 bg-[#EDF1E6] overflow-hidden">
       {/* Title */}
       <div className="support-content text-center mt-10 lg:mt-20">
         <h1 className="text-xl lg:text-4xl font-bold text-[#FA7054]">
           What are Our <span className="text-[#4F7100]">Customers Saying</span>
         </h1>
         <p className="py-2 px-5 lg:py-6 max-w-2xl mx-auto text-center text-gray-600 font-medium">
-          Testimonials from people who manage their obsessive-compulsive
+          Testimonials from people who manage their obsessive <br />-compulsive
           disorder with OCD&me
         </p>
       </div>
@@ -49,7 +49,7 @@ const CustomersSaying = () => {
       >
         {testimonials.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 p-6 border border-gray-100 h-full">
+            <div className="card bg-[#ECF3DD] shadow-xl hover:shadow-2xl transition-shadow duration-300 p-6 border border-gray-100 h-full">
               <p className="text-gray-600 mb-6 leading-relaxed line-clamp-3">
                 “{item.text}”
               </p>

@@ -1,214 +1,187 @@
-import Psychoeducation from "../assets/images/Psychoeducation.png";
-import Identifying from "../assets/images/Identifying.png";
-import Therapy from "../assets/images/therapy.png";
+
+import { useState } from "react";
+import Awareness from "../assets/images/Awareness.png";
+import CommunitySupport from "../assets/images/CommunitySupport.png";
 import { FaCircleCheck } from "react-icons/fa6";
 
-const Supports = () => {
-  return (
-    <div className="container-custom">
-      {/* support-content */}
-      <div className="support-content text-center">
-        <h1 className="text-2xl lg:text-4xl font-bold">
-          How OCD&me supports you
-        </h1>
-        <p className="py-2 px-5 lg:py-6 max-w-2xl mx-auto text-center lg:text-center text-gray-600 font-medium">
-          The scientifically based approach to overcoming obsessive- <br />
-          compulsive disorder in a few simple steps
-        </p>
-      </div>
+const modalContent = {
+  awareness: {
+    title: "Raising Awareness",
+    description: `Prominent experts like Dr. Mehedi Hasan and Dr. Nafisa Rahman
+      lead initiatives to educate people about mental health, depression,
+      anxiety, and trauma in Bangladesh. Awareness campaigns include:`,
+    points: [
+      "Nationwide awareness campaigns",
+      "Expert-led workshops & seminars",
+      "Educational social media content",
+    ],
+  },
+  community: {
+    title: "Community Support",
+    description: `Recording mental health needs and providing support through
+      clinics, online consultations, and community programs across
+      Bangladesh. Community support initiatives include:`,
+    points: [
+      "Online & offline counseling support",
+      "Collaboration with mental health NGOs",
+      "Local support groups & programs",
+    ],
+  },
+};
 
-        <section className="bg-[#FDF1DA] py-12 px-4 sm:px-6 md:px-10 lg:px-20">
-          {/* Step 1 */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-10 mb-8">
-            {/* --- Left Content --- */}
+const Supports = () => {
+  const [openModal, setOpenModal] = useState(null); // null, "awareness", "community"
+
+  return (
+    <div className="bg-[#EDF1E6]">
+      <div className="container-custom">
+        {/* Section Heading */}
+        <div className="support-content text-center">
+          <h1 className="text-2xl lg:text-4xl font-bold">
+            How Bangladesh’s <span className="text-[#FFC20F]">Mental Health Pioneers Support You</span>
+          </h1>
+          <p className="py-2 px-5 lg:py-6 max-w-2xl mx-auto text-gray-600 font-medium">
+            Promoting mental well-being across Bangladesh through awareness,
+            community support, and effective interventions.
+          </p>
+        </div>
+
+        {/* Step 1: Awareness */}
+        <section className="py-12 px-4 sm:px-6 md:px-10 lg:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
             <div className="order-2 lg:order-1 text-center lg:text-left">
               <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
                 <div className="w-10 h-10 flex items-center justify-center bg-[#F8D288] text-black rounded-full font-bold">
                   1
                 </div>
-                <h2 className="text-xl sm:text-2xl font-semibold">
-                  Psychoeducation
-                </h2>
+                <h2 className="text-xl sm:text-2xl font-semibold">Raising Awareness</h2>
               </div>
-
               <p className="text-[#121212CC]/80 text-left font-normal text-lg sm:text-base mb-5 leading-relaxed">
-                Start with a comprehensive understanding of your
-                obsessive-compulsive disorder. Our scientifically based
-                psychoeducation explains how compulsions develop, what types
-                there are, and how treatment works.
+                Prominent experts like Dr. Mehedi Hasan and Dr. Nafisa Rahman
+                lead initiatives to educate people about mental health,
+                depression, anxiety, and trauma in Bangladesh.
               </p>
-
               <ul className="space-y-3 text-[14px] sm:text-[15px]">
                 <li className="flex items-start sm:items-center gap-2 text-left">
                   <FaCircleCheck className="text-[#FA7054] text-base sm:text-lg flex-shrink-0 mt-[2px]" />
                   <span className="leading-snug text-[#121212] lg:text-lg lg:font-medium">
-                    Understandable explanation of OCD mechanisms
+                    Nationwide awareness campaigns
                   </span>
                 </li>
-
                 <li className="flex items-start sm:items-center gap-2 text-left">
                   <FaCircleCheck className="text-[#FA7054] text-base sm:text-lg flex-shrink-0 mt-[2px]" />
                   <span className="leading-snug text-[#121212] lg:text-lg lg:font-medium">
-                    Identifying your specific compulsive disorder
-                  </span>
-                </li>
-
-                <li className="flex items-start sm:items-center gap-2 text-left">
-                  <FaCircleCheck className="text-[#FA7054] text-base sm:text-lg flex-shrink-0 mt-[2px]" />
-                  <span className="leading-snug text-[#121212] lg:text-lg lg:font-medium">
-                    Scientifically based information
+                    Expert-led workshops & seminars
                   </span>
                 </li>
               </ul>
-
               <div className="mt-6 flex justify-start lg:justify-start">
-                <a className="btn bg-[#5A7A3C] hover:bg-[#4f6c35] text-white mt-2 rounded-full px-6">
-                  Try it for free →
-                </a>
+                <button
+                  className="btn bg-[#5A7A3C] hover:bg-[#4f6c35] text-white mt-2 rounded-full px-6"
+                  onClick={() => setOpenModal("awareness")}
+                >
+                  Learn More →
+                </button>
               </div>
             </div>
 
-            {/* --- Right Image --- */}
             <div className="flex justify-center order-1 lg:order-2">
-              <div className="bg-[#EDF1E6] w-[90%] lg:w-[416px] rounded-2xl flex justify-center items-center">
+              <div className="w-[90%] lg:w-full rounded-2xl flex justify-center items-center">
                 <img
-                  src={Psychoeducation}
-                  alt="Therapy Illustration"
-                  className="max-w-sm rounded-xl -mt-6 w-[80%] sm:w-[300px] md:w-[340px]"
+                  src={Awareness}
+                  alt="Awareness"
+                  className="w-full sm:w-[300px] md:w-[340px] bg-transparent"
                 />
               </div>
             </div>
           </div>
         </section>
-        {/* section_02 */}
-        <section className="bg-[#FAF8F1] py-12 px-4 sm:px-6 md:px-10 lg:px-20">
-          {/* Step 1 */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-10 mb-8">
-            {/* --- Left Content --- */}
+
+        {/* Step 2: Community Support */}
+        <section className="py-12 px-4 sm:px-6 md:px-10 lg:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
             <div className="order-2 lg:order-1 text-center lg:text-left">
               <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
                 <div className="w-10 h-10 flex items-center justify-center bg-[#F8D288] text-black rounded-full font-bold">
                   2
                 </div>
-                <h2 className="text-xl sm:text-2xl font-semibold">
-                  Identifying Compulsions 5
-                </h2>
+                <h2 className="text-xl sm:text-2xl font-semibold">Community Support</h2>
               </div>
-
-              <p className="text-[#121212CC]/80 text-left  font-normal text-lg sm:text-base mb-5 leading-relaxed">
-                Systematically record your individual obsessive thoughts and
-                actions. By deconstructing them, you'll identify the underlying
-                vicious cycles and be able to break them in a targeted manner.
-              </p>
-
-              <ul className="space-y-3 text-[14px] sm:text-[15px]">
-                <li className="flex items-start sm:items-center gap-2 text-left">
-                  <FaCircleCheck className="text-[#FA7054] text-base sm:text-lg flex-shrink-0 mt-[2px]" />
-                  <span className="leading-snug text-[#121212] lg:text-lg lg:font-medium">
-                    Structured recording of your compulsions
-                  </span>
-                </li>
-
-                <li className="flex items-start sm:items-center gap-2 text-left">
-                  <FaCircleCheck className="text-[#FA7054] text-base sm:text-lg flex-shrink-0 mt-[2px]" />
-                  <span className="leading-snug text-[#121212] lg:text-lg lg:font-medium">
-                    Analysis of vicious circles
-                  </span>
-                </li>
-
-                <li className="flex items-start sm:items-center gap-2 text-left">
-                  <FaCircleCheck className="text-[#FA7054] text-base sm:text-lg flex-shrink-0 mt-[2px]" />
-                  <span className="leading-snug text-[#121212] lg:text-lg lg:font-medium">
-                    Categorization according to types of coercion
-                  </span>
-                </li>
-              </ul>
-
-              <div className="mt-6 flex justify-start lg:justify-start">
-                <a className="btn bg-[#5A7A3C] hover:bg-[#4f6c35] text-white mt-2 rounded-full px-6">
-                  Try it for free →
-                </a>
-              </div>
-            </div>
-
-            {/* --- Right Image --- */}
-            <div className="flex justify-center order-1 lg:order-2">
-              <div className="bg-[#FFF1EE] w-[90%] lg:w-[416px] rounded-2xl flex justify-center items-center">
-                <img
-                  src={Identifying}
-                  alt="Identifying"
-                  className="max-w-sm rounded-xl -mt-6 w-[80%] sm:w-[300px] md:w-[340px]"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* section_03 */}
-        <section className="bg-[#EDF1E6] py-12 px-4 sm:px-6 md:px-10 lg:px-20">
-          {/* Step 1 */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-10 mb-8">
-            {/* --- Left Content --- */}
-            <div className="order-2 lg:order-1 text-center lg:text-left">
-              <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
-                <div className="w-10 h-10 flex items-center justify-center bg-[#F8D288] text-black rounded-full font-bold">
-                  3
-                </div>
-                <h2 className="text-xl sm:text-2xl font-semibold">
-                  ERP therapy
-                </h2>
-              </div>
-
               <p className="text-[#121212CC]/80 text-left font-normal text-lg sm:text-base mb-5 leading-relaxed">
-                Plan customized exposure exercises (ERPs) for your specific
-                compulsions. Gradual exposure will help you reduce your anxiety
-                and overcome the compulsions.
+                Recording mental health needs and providing support through
+                clinics, online consultations, and community programs across
+                Bangladesh.
               </p>
-
               <ul className="space-y-3 text-[14px] sm:text-[15px]">
                 <li className="flex items-start sm:items-center gap-2 text-left">
                   <FaCircleCheck className="text-[#FA7054] text-base sm:text-lg flex-shrink-0 mt-[2px]" />
                   <span className="leading-snug text-[#121212] lg:text-lg lg:font-medium">
-                    Systematic planning of your exposure exercises
+                    Online & offline counseling support
                   </span>
                 </li>
-
                 <li className="flex items-start sm:items-center gap-2 text-left">
                   <FaCircleCheck className="text-[#FA7054] text-base sm:text-lg flex-shrink-0 mt-[2px]" />
                   <span className="leading-snug text-[#121212] lg:text-lg lg:font-medium">
-                    Recording anxiety curves during exposures
-                  </span>
-                </li>
-
-                <li className="flex items-start sm:items-center gap-2 text-left">
-                  <FaCircleCheck className="text-[#FA7054] text-base sm:text-lg flex-shrink-0 mt-[2px]" />
-                  <span className="leading-snug text-[#121212] lg:text-lg lg:font-medium">
-                    Suggestions for the next steps in treatment
+                    Collaboration with mental health NGOs
                   </span>
                 </li>
               </ul>
-
               <div className="mt-6 flex justify-start lg:justify-start">
-                <a className="btn bg-[#5A7A3C] hover:bg-[#4f6c35] text-white mt-2 rounded-full px-6">
-                  Try it for free →
-                </a>
+                <button
+                  className="btn bg-[#5A7A3C] hover:bg-[#4f6c35] text-white mt-2 rounded-full px-6"
+                  onClick={() => setOpenModal("community")}
+                >
+                  Explore Programs →
+                </button>
               </div>
             </div>
 
-            {/* --- Right Image --- */}
             <div className="flex justify-center order-1 lg:order-2">
-              <div className="bg-[#FDF1DA] w-[90%] lg:h-[400px] lg:w-[416px] rounded-2xl flex justify-center items-center">
+              <div className="w-[90%] lg:w-[416px] rounded-2xl flex justify-center items-center">
                 <img
-                  src={Therapy}
-                  alt="Therapy"
-                  className="max-w-sm rounded-xl w-[80%] sm:w-[300px] md:w-[340px]"
+                  src={CommunitySupport}
+                  alt="Community Support"
+                  className="w-full sm:w-[300px] md:w-[340px]"
                 />
               </div>
             </div>
           </div>
         </section>
+      </div>
 
+      {/* Modal */}
+      {openModal && (
+        <div className="modal modal-open fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+          <div className="modal-box max-w-lg relative bg-white rounded-2xl shadow-xl">
+            <button
+              className="absolute top-4 right-4 text-gray-600 hover:text-red-500"
+              onClick={() => setOpenModal(null)}
+            >
+              ✕
+            </button>
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              {modalContent[openModal].title}
+            </h3>
+            <p className="text-gray-600 mb-4">{modalContent[openModal].description}</p>
+            <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
+              {modalContent[openModal].points.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
+            <div className="text-center">
+              <button
+                className="btn bg-[#5A7A3C] hover:bg-[#4f6c35] text-white rounded-full px-6"
+                onClick={() => setOpenModal(null)}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
 export default Supports;
+
