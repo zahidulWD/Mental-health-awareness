@@ -11,6 +11,10 @@
   .custon-swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     @apply !bg-[#FFC20F]
   }
+   .custon-swiperTeam .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    @apply !bg-[#4F7100]
+  }
+
 
   
 

@@ -22,7 +22,7 @@ const CustomersSaying = () => {
         <h1 className="text-xl lg:text-4xl font-bold text-[#FA7054]">
           What are Our <span className="text-[#4F7100]">Customers Saying</span>
         </h1>
-        <p className="py-2 px-5 lg:py-6 max-w-2xl mx-auto text-center text-gray-600">
+        <p className="py-2 px-5 lg:py-6 max-w-2xl mx-auto text-center text-gray-600 font-medium">
           Testimonials from people who manage their obsessive-compulsive
           disorder with OCD&me
         </p>

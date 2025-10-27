@@ -11,6 +11,7 @@ import Home from './pages/Home.jsx';
 import Features from './pages/Features.jsx';
 import Contact from './pages/Contact.jsx';
 import PremiumSection from './pages/PremiumSection.jsx';
+import Register from './pages/Register.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
        {
         path: "/contact",
         element: <Contact></Contact>,
+      },
+       {
+        path: "/register",
+        element: <Register></Register>,
       },
     ],
   },

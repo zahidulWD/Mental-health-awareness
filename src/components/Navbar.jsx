@@ -181,9 +181,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end  hidden lg:flex">
-          <a className="btn bg-[#4F7100] text-white rounded-3xl font-semibold px-6 py-5 ">
+          <NavLink to="/register" className="btn bg-[#4F7100] text-white rounded-3xl font-semibold px-6 py-5 ">
             Register now
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>

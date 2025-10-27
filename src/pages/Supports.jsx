@@ -11,7 +11,7 @@ const Supports = () => {
         <h1 className="text-2xl lg:text-4xl font-bold">
           How OCD&me supports you
         </h1>
-        <p className="py-2 px-5 lg:py-6 max-w-2xl mx-auto text-center lg:text-center">
+        <p className="py-2 px-5 lg:py-6 max-w-2xl mx-auto text-center lg:text-center text-gray-600 font-medium">
           The scientifically based approach to overcoming obsessive- <br />
           compulsive disorder in a few simple steps
         </p>

@@ -8,7 +8,6 @@ const PremiumSection = () => {
   const [data, setData] = useState({ monthly: [], annually: [] });
   const [loading, setLoading] = useState(true);
 
-  // ✅ Fetch data from JSON
   useEffect(() => {
     fetch("/premium.json")
       .then((res) => res.json())
@@ -20,7 +19,7 @@ const PremiumSection = () => {
   }, []);
 
   if (loading) {
-    return <p className="text-center py-20 text-gray-500">Loading plans...</p>;
+    return <p className="text-center py-20 text-gray-500"><span className="loading loading-bars loading-xl"></span></p>;
   }
 
   return (
@@ -129,7 +128,7 @@ const Card = ({
 
         <div className="mt-6">
           <a className="btn bg-transparent border border-[#4F7100] hover:bg-[#4F7100] text-black hover:text-white rounded-3xl font-semibold px-6 py-3 flex items-center text-base transition">
-            Try it for free <FaLongArrowAltRight className="ml-2 mt-[2px]" />
+            Register as a therapists<FaLongArrowAltRight className="ml-2 mt-[2px]" />
           </a>
           <p className="text-center text-gray-500 mt-2 text-sm">
             No credit card required for trial period
