@@ -63,28 +63,28 @@ const Hero = () => {
 <div className="p-4 bg-[#EDF1E6]">
   <div className="-top-20 lg:right-8 relative flex flex-wrap justify-evenly max-w-[1080px] bg-[#D1E0AF] mx-auto rounded-xl p-4 mt-4">
   {/* card1 */}
-  <div className="text-center p-2 flex-[1_1_250px]">
+  <div className="text-center p-2 flex-[1_1_250px] transition-transform duration-300 hover:scale-105">
     <img src={endtoend} alt="end to end" className="inline-block mx-auto mb-2" />
     <h2 className="text-lg lg:text-xl font-semibold text-[#121212]">End-to-end encryption</h2>
     <p className="text-sm lg:text-base text-[#121212]/80">Maximum security for your data</p>
   </div>
 
   {/* card2 */}
-  <div className="text-center p-2 flex-[1_1_250px]">
+  <div className="text-center p-2 flex-[1_1_250px] transition-transform duration-300 hover:scale-105">
     <img src={scienfically} alt="scientifically" className="inline-block mx-auto mb-2" />
     <h2 className="text-lg lg:text-xl font-semibold text-[#121212]">Scientifically based</h2>
     <p className="text-sm lg:text-base text-[#121212]/80">Based on current research findings</p>
   </div>
 
   {/* card3 */}
-  <div className="text-center p-2 flex-[1_1_250px]">
+  <div className="text-center p-2 flex-[1_1_250px] transition-transform duration-300 hover:scale-105">
     <img src={recomentet} alt="recommended" className="inline-block mx-auto mb-2" />
     <h2 className="text-lg lg:text-xl font-semibold text-[#121212]">Recommended by experts</h2>
     <p className="text-sm lg:text-base text-[#121212]/80">Tested by leading therapists</p>
   </div>
 
   {/* card4 */}
-  <div className="text-center p-2 flex-[1_1_250px]">
+  <div className="text-center p-2 flex-[1_1_250px] transition-transform duration-300 hover:scale-105">
     <img src={datacontrol} alt="data control" className="inline-block mx-auto mb-2" />
     <h2 className="text-lg lg:text-xl font-semibold text-[#121212]">Data control</h2>
     <p className="text-sm lg:text-base text-[#121212]/80">Full control of your data</p>

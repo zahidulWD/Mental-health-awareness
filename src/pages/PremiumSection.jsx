@@ -26,12 +26,12 @@ const PremiumSection = () => {
     <div className="bg-[#EDF1E6] py-10">
       <div className="container mx-auto px-4">
         {/* Title */}
-        <div className="text-center mb-10 mt-4 lg:mt-20">
-          <h1 className="text-2xl lg:text-3xl font-bold text-center">
-            Start your treatment with ZwangsFrei{" "}
-            <span className="text-[#FFC20F]">Premium</span>
+        <div className="text-center mb-10 mt-4 lg:mt-5">
+          <h1 className="text-2xl lg:text-3xl font-bold text-center ">
+            Start your treatment with  
+            <span className="text-[#FFC20F]"> ZwangsFrei Premium</span>
           </h1>
-          <p className="py-2 px-5 lg:py-6 max-w-2xl mx-auto text-gray-600 text-center">
+          <p className="py-2 px-5 lg:py-6 max-w-2xl mx-auto text-gray-600 text-center font-medium">
             All the features you need for successful therapy support
           </p>
 

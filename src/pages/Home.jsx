@@ -1,10 +1,8 @@
 
 import Hero from '../components/Hero';
-// import Contact from './Contact';
 import CustomersSaying from './CustomersSaying';
 import ExpartTeam from './ExpartTeam';
 import PremiumSection from './PremiumSection';
-// import ReadyToSection from './ReadyToSection';
 import Supports from './Supports';
 
 const Home = () => {
@@ -15,8 +13,6 @@ const Home = () => {
             <ExpartTeam></ExpartTeam>
             <CustomersSaying></CustomersSaying>
             <PremiumSection></PremiumSection>
-            {/* <ReadyToSection></ReadyToSection> */}
-            {/* <Contact></Contact> */}
         </div>
     );
 };

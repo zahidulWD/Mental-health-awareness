@@ -18,8 +18,8 @@ const CustomersSaying = () => {
   return (
     <div className="py-10 bg-[#EDF1E6] overflow-hidden">
       {/* Title */}
-      <div className="support-content text-center mt-10 lg:mt-20">
-        <h1 className="text-xl lg:text-4xl font-bold text-[#FA7054]">
+      <div className="support-content text-center mt-10 lg:mt-5">
+        <h1 className="text-xl lg:text-4xl font-bold text-[#FA7054] uppercase">
           What are Our <span className="text-[#4F7100]">Customers Saying</span>
         </h1>
         <p className="py-2 px-5 lg:py-6 max-w-2xl mx-auto text-center text-gray-600 font-medium">

@@ -88,7 +88,7 @@ const Footer = () => {
           <div className="flex items-center gap-2">
             <FaEnvelope className="text-white/80" />
             <a className="link link-hover hover:underline text-[#FFFFFF]/80">
-              ostin@info.com
+              mentalhealthbd@gmail.com
             </a>
           </div>
 
@@ -102,7 +102,7 @@ const Footer = () => {
       </footer>
       <div className="">
         <hr className="border-t border-[#fff]/20 mb-4" />
-        <p className="text-center font-normal text-lg text-[#FFFFFFCC]/80">
+        <p className="text-center font-normal text-lg text-[#FFFFFFCC]/80 py-6">
           2025 © All rights reserved by COD & me
         </p>
       </div>
