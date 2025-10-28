@@ -1,99 +1,205 @@
-import { FaLongArrowAltRight, FaRegPlayCircle } from "react-icons/fa";
-import banner from "../assets/images/banner-image.png";
-import bannerbg from "../assets/images/banner-bg1.png";
-import endtoend from "../assets/images/end-to-end.png";
-import scienfically from "../assets/images/scienfically.png";
-import recomentet from "../assets/images/recomentet.png";
-import datacontrol from "../assets/images/data-control.png";
+
+
+// import { FaRegPlayCircle } from "react-icons/fa";
+// import banner from "../assets/images/banner_image-4.png";
+// import endtoend from "../assets/images/end-to-end.png";
+// import scienfically from "../assets/images/scienfically.png";
+// import recomentet from "../assets/images/recomentet.png";
+// import datacontrol from "../assets/images/data-control.png";
+
+// const Hero = () => {
+//   return (
+//     <div className="bg-[#FDF1DA]">
+//       {/* Main Banner Section */}
+//       <div className="container-custom flex flex-col-reverse md:flex-row items-center justify-between gap-10 px-5 py-12">
+//         {/* Text Section */}
+//         <div className="w-full md:w-1/2 space-y-5 text-center md:text-left">
+//           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#4F7100] leading-snug">
+//             Nurture your mind, <br />
+//             embrace your <span className="text-[#FA7054]">well-being</span>
+//           </h1>
+
+//           <p className="text-[#121212CC] max-w-md mx-auto md:mx-0 text-base md:text-lg font-medium">
+//             MindNest helps you understand, heal, and strengthen your mental health — 
+//             guided by science, compassion, and community.  
+//             <br />
+//             <span className="text-[#4F7100] font-semibold">
+//               আপনার মানসিক শান্তিই আপনার আসল শক্তি — MindNest পাশে আছে সবসময়।
+//             </span>
+//           </p>
+
+//           <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+//             <a className="btn bg-[#4F7100] hover:bg-[#3a5900] text-white rounded-full px-8 py-3 font-semibold transition">
+//               Get Started
+//             </a>
+
+//             <button className="flex items-center gap-2 text-[#FA7054] font-semibold hover:opacity-80 transition">
+//               <FaRegPlayCircle className="text-2xl" />
+//               Watch Intro
+//             </button>
+//           </div>
+//         </div>
+
+//         {/* Image Section */}
+//         <div className="w-full md:w-1/2 flex justify-center">
+//           <img
+//             src={banner}
+//             alt="MindNest Banner"
+//             className="w-72 md:w-96 lg:w-[480px] drop-shadow-lg animate-fadeIn"
+//           />
+//         </div>
+//       </div>
+
+//       {/* Info Cards Section */}
+//       <div className="bg-[#EDF1E6] px-5 pb-8 -mt-10">
+//         <div className="relative max-w-6xl mx-auto bg-[#D1E0AF] rounded-2xl p-6 flex flex-wrap justify-evenly gap-6 shadow-sm">
+          
+//           {/* Card 1 */}
+//           <div className="text-center p-4 flex-[1_1_230px] bg-white/40 rounded-xl backdrop-blur-sm transition-transform duration-300 hover:scale-105">
+//             <img src={endtoend} alt="End-to-end Encryption" className="mx-auto mb-3 w-12 h-12" />
+//             <h2 className="text-lg lg:text-xl font-semibold text-[#121212]">
+//               End-to-end Encryption
+//             </h2>
+//             <p className="text-sm text-[#121212]/80 mt-1">
+//               Your privacy is our priority
+//             </p>
+//           </div>
+
+//           {/* Card 2 */}
+//           <div className="text-center p-4 flex-[1_1_230px] bg-white/40 rounded-xl backdrop-blur-sm transition-transform duration-300 hover:scale-105">
+//             <img src={scienfically} alt="Scientifically Based" className="mx-auto mb-3 w-12 h-12" />
+//             <h2 className="text-lg lg:text-xl font-semibold text-[#121212]">
+//               Scientifically Based
+//             </h2>
+//             <p className="text-sm text-[#121212]/80 mt-1">
+//               Grounded in proven research
+//             </p>
+//           </div>
+
+//           {/* Card 3 */}
+//           <div className="text-center p-4 flex-[1_1_230px] bg-white/40 rounded-xl backdrop-blur-sm transition-transform duration-300 hover:scale-105">
+//             <img src={recomentet} alt="Expert Recommended" className="mx-auto mb-3 w-12 h-12" />
+//             <h2 className="text-lg lg:text-xl font-semibold text-[#121212]">
+//               Expert Recommended
+//             </h2>
+//             <p className="text-sm text-[#121212]/80 mt-1">
+//               Trusted by professionals
+//             </p>
+//           </div>
+
+//           {/* Card 4 */}
+//           <div className="text-center p-4 flex-[1_1_230px] bg-white/40 rounded-xl backdrop-blur-sm transition-transform duration-300 hover:scale-105">
+//             <img src={datacontrol} alt="Data Control" className="mx-auto mb-3 w-12 h-12" />
+//             <h2 className="text-lg lg:text-xl font-semibold text-[#121212]">
+//               Data Control
+//             </h2>
+//             <p className="text-sm text-[#121212]/80 mt-1">
+//               You own your information
+//             </p>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Hero;
+
+
+
+import { FaRegPlayCircle, FaBrain, FaUsers, FaHandshake } from "react-icons/fa";
+import { FaShieldHeart } from "react-icons/fa6";
+import banner from "../assets/images/banner_image-4.png";
 
 const Hero = () => {
   return (
-    <div>
-      <div className="bg-[#FDF1DA]">
-      <div className="container-custom relative overflow-hidden ">
-      {/* Background Image */}
-      <img
-        src={bannerbg}
-        alt="banner background"
-        className="absolute bottom-0 left-1/2 md:left-3/4 lg:left-3/4 lg:top-15 -translate-x-1/2 w-[300px] md:w-[350px] lg:w-[400px] opacity-80 pointer-events-none transition-all duration-500"
-      />
+    <div className="bg-[#FDF1DA] overflow-hidden">
+      {/* ===== Banner Section ===== */}
+      <div className="container-custom flex flex-col-reverse md:flex-row items-center justify-between gap-10 px-5 py-12">
+        
+        {/* ===== Text Section ===== */}
+        <div className="w-full md:w-1/2 space-y-5 text-center md:text-left">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#4F7100] leading-snug animate-fadeIn">
+            Nurture your mind, <br />
+            embrace your <span className="text-[#FA7054]">well-being</span>
+          </h1>
 
-      <div className="mx-auto px-5 py-16">
-        <div className="flex flex-col-reverse md:flex-row-reverse items-center justify-between gap-10 mt-4">
-          {/* Banner Image */}
-          <div className="relative z-10 flex justify-center md:justify-end w-full md:w-1/2">
-            <img
-              src={banner}
-              alt="banner"
-              className="max-w-xs md:max-w-sm lg:max-w-lg drop-shadow-lg"
-            />
+          <p className="text-[#121212CC] max-w-md mx-auto md:mx-0 text-base md:text-lg font-medium animate-fadeIn">
+            MindNest helps you understand, heal, and strengthen your mental health — 
+            guided by science, compassion, and community.
+            <br />
+            <span className="text-[#4F7100] font-semibold">
+              আপনার মানসিক শান্তিই আপনার আসল শক্তি — MindNest পাশে আছে সবসময়।
+            </span>
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 animate-fadeIn">
+            <a
+              href="#"
+              className="btn bg-[#4F7100] hover:bg-[#3a5900] text-white rounded-full px-8 py-3 font-semibold transition"
+            >
+              Get Started
+            </a>
+
+            <button className="flex items-center gap-2 text-[#FA7054] font-semibold hover:opacity-80 transition">
+              <FaRegPlayCircle className="text-2xl" />
+              Watch Intro
+            </button>
+          </div>
+        </div>
+
+        {/* ===== Image Section ===== */}
+        <div className="w-full md:w-1/2 flex justify-center animate-fadeIn">
+          <img
+            src={banner}
+            alt="MindNest Banner"
+            className="w-72 md:w-96 lg:w-[480px] drop-shadow-lg"
+          />
+        </div>
+      </div>
+
+      {/* ===== Info Cards Section ===== */}
+      <div className="bg-[#FDF1DA] px-5 pb-12 -mt-10">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          {/* Card 1 */}
+          <div className="bg-white rounded-xl shadow-sm p-6 text-center transition-transform hover:scale-105 hover:shadow-md">
+            <FaBrain className="text-[#4F7100] text-4xl mx-auto mb-3" />
+            <h2 className="text-lg font-semibold text-[#121212]">Mindful Healing</h2>
+            <p className="text-sm text-[#121212]/80 mt-1">
+              Build emotional balance and inner peace.
+            </p>
           </div>
 
-          {/* Text Section */}
-          <div className="text-center md:text-left w-full md:w-1/2 mr-8">
-            {/* badge */}
-            <div className="badge bg-[#FA7054] text-[#FFFFFF] rounded-2xl p-4 text-[10px]  lg:text-sm lg:mb-4"><p className="">Limited offer: 20% discount + 14-day free trial</p></div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#4F7100] leading-snug text-left">
-              Free yourself <br /> from burdensome <br />{" "}
-              <span className="text-[#FA7054]">constraints</span>
-            </h1>
-
-            <p className="py-6 text-[#121212CC] max-w-md mx-auto md:mx-0 font-medium text-left">
-              OCD&me is your scientifically based digital support that helps you systematically manage obsessive-compulsive disorder - in collaboration with your therapist.
+          {/* Card 2 */}
+          <div className="bg-white rounded-xl shadow-sm p-6 text-center transition-transform hover:scale-105 hover:shadow-md">
+            <FaShieldHeart className="text-[#FA7054] text-4xl mx-auto mb-3" />
+            <h2 className="text-lg font-semibold text-[#121212]">Safe & Secure</h2>
+            <p className="text-sm text-[#121212]/80 mt-1">
+              Your mental health journey stays private.
             </p>
+          </div>
 
-            {/* Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mb-8">
-              <a className="btn bg-[#4F7100] text-white rounded-3xl font-semibold px-6 py-3 flex items-center text-base hover:bg-[#3e5a00] transition">
-                Try it for free{" "}
-                <FaLongArrowAltRight className="text-sm mt-1 ml-2" />
-              </a>
+          {/* Card 3 */}
+          <div className="bg-white rounded-xl shadow-sm p-6 text-center transition-transform hover:scale-105 hover:shadow-md">
+            <FaUsers className="text-[#4F7100] text-4xl mx-auto mb-3" />
+            <h2 className="text-lg font-semibold text-[#121212]">Community Support</h2>
+            <p className="text-sm text-[#121212]/80 mt-1">
+              Connect with people who truly care.
+            </p>
+          </div>
 
-              <a className="btn bg-[#FA7054] rounded-3xl text-[#121212] px-6 py-3 flex items-center gap-2 text-base font-semibold hover:bg-[#e55f45] transition">
-                <FaRegPlayCircle className="text-white text-lg" /> Watch videos
-              </a>
-            </div>
+          {/* Card 4 */}
+          <div className="bg-white rounded-xl shadow-sm p-6 text-center transition-transform hover:scale-105 hover:shadow-md">
+            <FaHandshake className="text-[#FA7054] text-4xl mx-auto mb-3" />
+            <h2 className="text-lg font-semibold text-[#121212]">Guided by Experts</h2>
+            <p className="text-sm text-[#121212]/80 mt-1">
+              Backed by trusted psychologists & counselors.
+            </p>
           </div>
         </div>
       </div>
     </div>
-    </div>
-
-{/* banner card section */}
-<div className="p-4 bg-[#EDF1E6]">
-  <div className="-top-20 lg:right-8 relative flex flex-wrap justify-evenly max-w-[1080px] bg-[#D1E0AF] mx-auto rounded-xl p-4 mt-4">
-  {/* card1 */}
-  <div className="text-center p-2 flex-[1_1_250px] transition-transform duration-300 hover:scale-105">
-    <img src={endtoend} alt="end to end" className="inline-block mx-auto mb-2" />
-    <h2 className="text-lg lg:text-xl font-semibold text-[#121212]">End-to-end encryption</h2>
-    <p className="text-sm lg:text-base text-[#121212]/80">Maximum security for your data</p>
-  </div>
-
-  {/* card2 */}
-  <div className="text-center p-2 flex-[1_1_250px] transition-transform duration-300 hover:scale-105">
-    <img src={scienfically} alt="scientifically" className="inline-block mx-auto mb-2" />
-    <h2 className="text-lg lg:text-xl font-semibold text-[#121212]">Scientifically based</h2>
-    <p className="text-sm lg:text-base text-[#121212]/80">Based on current research findings</p>
-  </div>
-
-  {/* card3 */}
-  <div className="text-center p-2 flex-[1_1_250px] transition-transform duration-300 hover:scale-105">
-    <img src={recomentet} alt="recommended" className="inline-block mx-auto mb-2" />
-    <h2 className="text-lg lg:text-xl font-semibold text-[#121212]">Recommended by experts</h2>
-    <p className="text-sm lg:text-base text-[#121212]/80">Tested by leading therapists</p>
-  </div>
-
-  {/* card4 */}
-  <div className="text-center p-2 flex-[1_1_250px] transition-transform duration-300 hover:scale-105">
-    <img src={datacontrol} alt="data control" className="inline-block mx-auto mb-2" />
-    <h2 className="text-lg lg:text-xl font-semibold text-[#121212]">Data control</h2>
-    <p className="text-sm lg:text-base text-[#121212]/80">Full control of your data</p>
-  </div>
-</div>
-</div>
-
-    </div>
-     
   );
 };
 

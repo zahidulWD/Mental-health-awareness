@@ -12,10 +12,12 @@ import Features from './pages/Features.jsx';
 import Contact from './pages/Contact.jsx';
 import PremiumSection from './pages/PremiumSection.jsx';
 import Register from './pages/Register.jsx';
+import ErrorPage from './pages/ErrorPage.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",

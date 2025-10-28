@@ -1,44 +1,44 @@
 [
   {
     "id": 1,
-    "name": "Tomas Trojan",
-    "role": "Psychotherapist",
-    "img": "https://i.ibb.co.com/fYL3QRBs/image-1.png",
-    "text": "The structured approach has helped me enormously. I used to feel at the mercy of my constraints, but now I have concrete tools to combat them."
+    "name": "Dr. Nabila Rahman",
+    "role": "Clinical Psychologist",
+    "img": "https://i.ibb.co.com/yFQN12Jj/images.jpg",
+    "text": "MindNest সত্যিই আমার ক্লায়েন্টদের সাথে connect করতে সাহায্য করছে। Awareness, empathy, এবং hope প্রতিটি মানুষের জন্য আছে।"
   },
   {
     "id": 2,
-    "name": "Matej Ptajak",
-    "role": "Therapist",
-    "img": "https://i.ibb.co.com/9HQ2LWkN/image-2.png",
-    "text": "The structured approach has helped me enormously. I used to feel at the mercy of my constraints, but now I have concrete tools to combat them. ERP planning is particularly helpful."
+    "name": "Arif Hossain",
+    "role": "University Student",
+    "img": "https://i.ibb.co.com/fmpSZ9T/1691331962-730.png",
+    "text": "MindNest-এর resources ব্যবহার করে আমি stress এবং anxiety manage করতে শিখেছি। এটা এমন এক friend এর মত, যে সত্যিই বোঝে।"
   },
   {
     "id": 3,
-    "name": "Sarah Connor",
-    "role": "Clinical Psychologist",
-    "img": "https://i.ibb.co.com/TxYQHVD6/images.jpg",
-    "text": "ERP planning has been particularly helpful. The guidance and structure make treatment smooth and consistent."
+    "name": "Dr. Mehedi Hasan",
+    "role": "Mental Health Counselor",
+    "img": "https://i.ibb.co.com/ksmrXhjY/mehedi.webp",
+    "text": "MindNest-এর focus on community healing অসাধারণ। এটা মনে করায় mental well-being একটি journey, not just a destination."
   },
   {
     "id": 4,
-    "name": "John Doe",
-    "role": "Behavioral Expert",
-    "img": "https://i.ibb.co.com/7xxDNnRr/credit-client.png",
-    "text": "OCD&me offers incredible guidance — I’ve seen measurable improvements in patients’ self-control and awareness."
+    "name": "Sadia Ayman",
+    "role": "Social Worker",
+    "img": "https://i.ibb.co.com/0yWBLvtM/1907645b49ee82f17069922fc6b481d9.jpg",
+    "text": "MindNest awareness তৈরি করে এমনভাবে, যা heart-touching। Mental health conversations এখন open, normal এবং compassionate।"
   },
   {
     "id": 5,
-    "name": "Emma Watson",
-    "role": "Therapist",
-    "img": "https://i.ibb.co.com/M5BswVLp/images-1.jpg",
-    "text": "I love how it simplifies complex treatment methods. It helps both professionals and patients stay on track."
+    "name": "Rahim Uddin",
+    "role": "Teacher",
+    "img": "https://i.ibb.co.com/FqwG1WqB/images.jpg",
+    "text": "আমি MindNest-এর tips classroom-এ ব্যবহার করছি যাতে students নিরাপদ এবং understood feel করে। এটা আমাদের সমাজের জন্য শক্তিশালী initiative।"
   },
   {
     "id": 6,
-    "name": "Michael Lee",
-    "role": "Clinical Researcher",
-    "img": "https://i.pravatar.cc/100?img=10",
-    "text": "The modern approach and smooth UI make OCD&me stand out. It's truly designed for patient success."
+    "name": "Dr. Farzana Ahmed",
+    "role": "Psychiatrist",
+    "img": "https://i.ibb.co.com/wNG3dhyd/Dr-Raihana-Ahmed.jpg",
+    "text": "MindNest science এবং compassion একসাথে নিয়ে এসেছে। এটা এমন একটি space যা সত্যিই emotional healing এবং awareness promote করে।"
   }
 ]

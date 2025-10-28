@@ -6,6 +6,10 @@ export default {
       screens: {
         "3xl": "1600px", //  custom breakpoint
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"],
+      },
     },
   },
   plugins: [require("daisyui")],

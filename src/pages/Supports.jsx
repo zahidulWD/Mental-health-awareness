@@ -1,7 +1,7 @@
 
 import { useState } from "react";
-import Awareness from "../assets/images/Awareness.png";
-import CommunitySupport from "../assets/images/CommunitySupport.png";
+import Awareness from "../assets/images/download.png";
+import CommunitySupport from "../assets/images/community.png";
 import { FaCircleCheck } from "react-icons/fa6";
 
 const modalContent = {
@@ -30,21 +30,29 @@ const modalContent = {
 };
 
 const Supports = () => {
-  const [openModal, setOpenModal] = useState(null); // null, "awareness", "community"
+  const [openModal, setOpenModal] = useState(null); 
 
   return (
     <div className="bg-[#EDF1E6]">
       <div className="container-custom">
-        {/* Section Heading */}
-        <div className="support-content text-center">
-          <h1 className="text-2xl lg:text-4xl font-bold">
-            How Bangladesh’s <span className="text-[#FFC20F]">Mental Health Pioneers Support You</span>
-          </h1>
-          <p className="py-2 px-5 lg:py-6 max-w-2xl mx-auto text-gray-600 font-medium">
-            Promoting mental well-being across Bangladesh through awareness,
-            community support, and effective interventions.
-          </p>
-        </div>
+    {/* ===== Section Heading ===== */}
+      <div className="support-content text-center px-4 md:px-8 lg:px-12 py-10 lg:py-14">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#2E4600] leading-snug">
+          How Bangladesh’s{" "}
+          <span className="text-[#FFC20F]">
+            Mental Health Pioneers Support You
+          </span>
+        </h1>
+
+        <p className="mt-3 lg:mt-5 text-sm sm:text-base lg:text-lg text-gray-600 font-medium max-w-2xl mx-auto">
+          Promoting mental well-being across Bangladesh through awareness, 
+          community support, and effective interventions.
+        </p>
+
+        {/* Optional small decorative underline */}
+        <div className="w-20 h-1 bg-[#FFC20F] mx-auto mt-4 rounded-full"></div>
+      </div>
+
 
         {/* Step 1: Awareness */}
         <section className="py-12 px-4 sm:px-6 md:px-10 lg:px-20">
@@ -90,7 +98,7 @@ const Supports = () => {
                 <img
                   src={Awareness}
                   alt="Awareness"
-                  className="w-full sm:w-[300px] md:w-[340px] bg-transparent"
+                  className="w-full sm:w-[300px] md:w-[340px] lg:w-100%"
                 />
               </div>
             </div>
@@ -141,7 +149,7 @@ const Supports = () => {
                 <img
                   src={CommunitySupport}
                   alt="Community Support"
-                  className="w-full sm:w-[300px] md:w-[340px]"
+                  className="w-full sm:w-[300px] md:w-[340px] lg:w-full"
                 />
               </div>
             </div>

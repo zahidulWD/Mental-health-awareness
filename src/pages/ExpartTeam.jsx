@@ -45,10 +45,11 @@ const ExpartTeam = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#4F7100] uppercase">
           Meet Our <span className="text-[#FFC20F]">Expert Team</span>
         </h2>
-        <p className="text-gray-600 mb-12 max-w-2xl mx-auto font-medium">
+        <p className="text-gray-600 mb-8 max-w-2xl mx-auto font-medium">
           A dedicated team of mental health professionals working together to
           promote emotional well-being, resilience, and mindfulness.
         </p>
+         <div className="w-20 h-1 bg-[#FFC20F] mx-auto rounded-full mb-4"></div>
 
         <Swiper
           modules={[Pagination, Autoplay]}
