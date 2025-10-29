@@ -88,7 +88,7 @@ const Footer = () => {
           <div className="flex items-center gap-2">
             <FaEnvelope className="text-white/80" />
             <a className="link link-hover hover:underline text-[#FFFFFF]/80">
-              mentalhealthbd@gmail.com
+              mindnest@gmail.com
             </a>
           </div>
 

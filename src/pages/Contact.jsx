@@ -22,7 +22,7 @@ const Contact = () => {
             </div>
             <div className="flex items-center mb-6">
               <FaEnvelope className="text-2xl text-green-600 mr-4" />
-              <span className="text-gray-700">mentalhealthbd@gmail.com</span>
+              <span className="text-gray-700">mindnest@gmail.com</span>
             </div>
             <div className="flex items-center">
               <FaMapMarkerAlt className="text-2xl text-green-600 mr-4" />
@@ -38,20 +38,20 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="input input-success w-full border border-[#4F7100]"
+                className="input input-success w-full"
               />
               <input
                 type="email"
                 placeholder="Your Email"
-                className="input input-success w-full border border-[#4F7100]"
+                className="input input-success w-full"
               />
               <textarea
                 placeholder="Your Message"
-                className="textarea textarea-bordered w-full border border-[#4F7100]"
+                className="textarea textarea-bordered w-full"
               ></textarea>
               <a
                 type="submit"
-                className="btn bg-[#4F7100] mt-2 text-white"
+                className="btn bg-[#4F7100] mt-2 text-white hover:bg-[#FFC20F] hover:text-gray-800 transition-colors duration-300"
               >
                 Send Message
               </a>

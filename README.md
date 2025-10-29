@@ -1,16 +1,70 @@
-# React + Vite
+# 🧠 MindNest – Mental Health Awareness Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+| ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white) | ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white) | ![DaisyUI](https://img.shields.io/badge/DaisyUI-5A0EF8?style=for-the-badge&logo=daisyui&logoColor=white) | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |
+|---|---|---|---|
 
-Currently, two official plugins are available:
+A modern, responsive, and awareness-driven **Mental Health website** built to promote psychological well-being, reduce stigma, and connect people with supportive mental health resources in Bangladesh.  
+Developed with **React**, **Tailwind CSS**, and **DaisyUI**, MindNest focuses on simplicity, accessibility, and calm design aesthetics to ensure an emotionally comforting experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🔗 Live Demo  
+👉 [🌐 Visit MindNest Live Website](https://mindnest.surge.sh/)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 🖼️ Preview  
+
+<div align="center">
+  <img src="https://i.ibb.co/Tx2tKKm9/Screenshot-2025-10-29-at-10-08-28-Mental-health-awareness.png" alt="MindNest Website Screenshot" style="width:100%; max-width:1000px; height:auto; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.2);" />
+</div>
+
+
+---
+
+## ✨ Features  
+
+- 💚 **Awareness Campaigns:** Spread knowledge about mental health and emotional well-being.  
+- 👥 **Community Support:** Highlight community-driven initiatives and organizations.  
+- 📘 **Educational Sections:** Learn from verified psychologists and counselors.  
+- 🌍 **Bangladesh Focused:** Designed to support local communities and mental health pioneers.  
+- 📱 **Fully Responsive:** Optimized for mobile, tablet, and desktop.  
+- 🧭 **Smooth Navigation:** Clean and user-friendly layout using React Router.  
+- 💬 **Dynamic Components:** Engaging sections with modals, animations, and AOS scroll effects.  
+- 🌈 **Theme Customization:** DaisyUI-based elegant and calm theme switching.  
+
+---
+
+## 🧰 Tech Stack  
+
+| Technology | Purpose |
+|-------------|----------|
+| **React.js** | Core frontend framework |
+| **Tailwind CSS** | Utility-first styling framework |
+| **DaisyUI** | Ready-made UI components for Tailwind |
+| **JavaScript (ES6+)** | Logic and interactivity |
+| **AOS Animation** | Scroll-based animations |
+| **React Router** | Navigation and routing |
+| **JSON Data** | Local dynamic data storage |
+| **Surge** | Deployment and hosting |
+
+---
+
+## ⚙️ Installation & Setup  
+
+Follow these steps to run the project locally 👇  
+
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/zahidulWD/mindnest-website.git
+
+# 2️⃣ Navigate to the project folder
+cd mindnest-website
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Start the development server
+npm run dev

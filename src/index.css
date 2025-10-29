@@ -25,6 +25,26 @@ body {
 
 
 
+/* Typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #FFC20F; }
+}
+
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #FFC20F; /* caret color */
+  animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+
+
 
 
 
