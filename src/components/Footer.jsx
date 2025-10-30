@@ -1,112 +1,91 @@
 import React from "react";
-import { CiFacebook, CiInstagram, CiTwitter } from "react-icons/ci";
-import { FaMapMarkerAlt } from "react-icons/fa";
-import { FaEnvelope, FaPhone, FaXTwitter } from "react-icons/fa6";
-import { RiTwitterXFill } from "react-icons/ri";
-import { TiSocialFacebook, TiSocialTwitterCircular } from "react-icons/ti";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className=" bg-[#2B3E00]">
-      <footer className="footer sm:footer-horizontal text-white p-10 container-custom mb-5">
-        <aside>
-          <h2 className="font-bold text-2xl">
-            COD & <small>me</small>
-          </h2>
-          <p className="text-[#FFFFFF]/80">
-            Creatives driven by the desire to bring your <br /> vision to life.
-            With a blend of artistic flair of <br /> brands than ever before
+    <footer className="bg-[#2B3E00] text-[#FFFFFFCC] pt-16 pb-8">
+      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+        {/* Brand Info */}
+        <div>
+          <h2 className="text-3xl font-bold text-white mb-3">MindNest</h2>
+          <p>
+            A calm place to explore, learn, and grow your mental well-being.
+            Join us in spreading awareness and support for better mental health.
           </p>
-          {/* socail icons with react icon */}
-          <div className="flex justify-start gap-4 mt-8 ite items-center">
+          {/* Social Icons */}
+          <div className="flex gap-4 mt-5">
             <a
-              href=""
-              className="text-2xl bg-[#4F7100] rounded-full text-[white] p-2"
+              href="#"
+              className="bg-[#4F7100] text-white p-2 rounded-full hover:bg-[#678F15] transition"
             >
-              {" "}
-              <TiSocialFacebook />{" "}
+              <FaFacebookF />
             </a>
             <a
-              href=""
-              className="text-2xl bg-[#4F7100] rounded-full text-[white] p-2"
+              href="#"
+              className="bg-[#4F7100] text-white p-2 rounded-full hover:bg-[#678F15] transition"
             >
-              {" "}
-              <CiTwitter />
+              <FaInstagram />
             </a>
             <a
-              href=""
-              className="text-2xl bg-[#4F7100] rounded-full text-[white] p-2"
+              href="#"
+              className="bg-[#4F7100] text-white p-2 rounded-full hover:bg-[#678F15] transition"
             >
-              {" "}
-              <CiInstagram />
-            </a>
-            <a
-              href=""
-              className=" text-2xl bg-[#4F7100] rounded-full text-[white] p-2"
-            >
-              {" "}
-              <RiTwitterXFill />
+              <FaLinkedinIn />
             </a>
           </div>
-        </aside>
-        {/* nav-02 */}
-        <nav>
-          <h6 className="text-lg font-semibold">Company</h6>
-          <a className="link link-hover hover:underline text-[#FFFFFF]/80">
-            Home
-          </a>
-          <a className="link link-hover hover:underline text-[#FFFFFF]/80">
-            About
-          </a>
-          <a className="link link-hover hover:underline text-[#FFFFFF]/80">
-            Services
-          </a>
-        </nav>
-        <nav>
-          <h6 className="text-lg font-semibold">Legal</h6>
-          <a className="link link-hover hover:underline text-[#FFFFFF]/80">
-            Contact Us
-          </a>
-          <a className="link link-hover hover:underline text-[#FFFFFF]/80">
-            Privacy policy
-          </a>
-          <a className="link link-hover hover:underline text-[#FFFFFF]/80">
-            Terms & Conditions
-          </a>
-        </nav>
-        {/* nav-03 */}
-        <nav className="flex flex-col gap-2">
-          <h6 className="text-lg font-semibold">Contact Info</h6>
+        </div>
 
-          <div className="flex items-start gap-2">
-            <FaMapMarkerAlt className="text-white/80 mt-1" />
-            <a className="link link-hover hover:underline text-[#FFFFFF]/80">
-              4140 Parker Rd. Allentown, <br /> New Mexico 31134
-            </a>
-          </div>
+        {/* Quick Links */}
+        <div>
+          <h4 className="text-xl font-semibold text-white mb-4">Quick Links</h4>
+          <ul className="space-y-2">
+            <li><a href="#" className="hover:underline">Home</a></li>
+            <li><a href="#" className="hover:underline">About Us</a></li>
+            <li><a href="#" className="hover:underline">Therapy Plans</a></li>
+            <li><a href="#" className="hover:underline">Community</a></li>
+          </ul>
+        </div>
 
-          <div className="flex items-center gap-2">
-            <FaEnvelope className="text-white/80" />
-            <a className="link link-hover hover:underline text-[#FFFFFF]/80">
-              mindnest@gmail.com
-            </a>
-          </div>
+        {/* Resources */}
+        <div>
+          <h4 className="text-xl font-semibold text-white mb-4">Resources</h4>
+          <ul className="space-y-2">
+            <li><a href="#" className="hover:underline">Mental Health Blog</a></li>
+            <li><a href="#" className="hover:underline">FAQs</a></li>
+            <li><a href="#" className="hover:underline">Terms of Service</a></li>
+            <li><a href="#" className="hover:underline">Privacy Policy</a></li>
+          </ul>
+        </div>
 
-          <div className="flex items-center gap-2">
-            <FaPhone className="text-white/80" />
-            <a className="link link-hover hover:underline text-[#FFFFFF]/80">
-              (123) 456 7890
-            </a>
-          </div>
-        </nav>
-      </footer>
-      <div className="">
-        <hr className="border-t border-[#fff]/20 mb-4" />
-        <p className="text-center font-normal text-lg text-[#FFFFFFCC]/80 py-6">
-          2025 © All rights reserved by COD & me
-        </p>
+        {/* Contact Info */}
+        <div>
+          <h4 className="text-xl font-semibold text-white mb-4">Contact Us</h4>
+          <ul className="space-y-3">
+            <li className="flex items-center gap-2">
+              <FaMapMarkerAlt className="text-[#B8E28A]" /> Dhaka, Bangladesh
+            </li>
+            <li className="flex items-center gap-2">
+              <FaEnvelope className="text-[#B8E28A]" /> mindnest@gmail.com
+            </li>
+            <li className="flex items-center gap-2">
+              <FaPhoneAlt className="text-[#B8E28A]" /> +880 1645 769 571
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+
+      {/* Bottom Section */}
+      <div className="border-t border-[#FFFFFF33] mt-10 pt-5 text-center text-[#FFFFFF99] text-sm">
+        © {new Date().getFullYear()} MindNest | All Rights Reserved 🌿
+      </div>
+    </footer>
   );
 };
 
