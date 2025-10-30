@@ -16,13 +16,11 @@ Developed with **React**, **Tailwind CSS**, and **DaisyUI**, MindNest focuses on
 
 
 ## 🖼️ Preview  
-<p align="center">
-  <img src="https://i.ibb.co/dJ17FynN/full-preview.png" 
+<div align="center">
+  <img src="https://i.ibb.co/Kxpqg1h9/fully-preview-website.png" 
        alt="MindNest Website Screenshot" 
-       width="1000" 
-       style="border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.2);" />
-</p>
-
+       width="100%" />
+</div>
 
 
 
