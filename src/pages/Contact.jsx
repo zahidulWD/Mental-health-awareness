@@ -51,7 +51,7 @@ const Contact = () => {
               ></textarea>
               <a
                 type="submit"
-                className="btn bg-[#4F7100] mt-2 text-white hover:bg-[#FFC20F] hover:text-gray-800 transition-colors duration-300"
+                className="btn bg-[#4F7100] mt-2 text-white hover:bg-[#EDF1E6] hover:text-gray-800 transition-colors duration-300"
               >
                 Send Message
               </a>

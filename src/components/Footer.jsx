@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-[#2B3E00] text-[#FFFFFFCC] pt-16 pb-8">
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="container-custom mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Brand Info */}
         <div>
           <h2 className="text-3xl font-bold text-white mb-3">MindNest</h2>

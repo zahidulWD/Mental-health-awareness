@@ -33,7 +33,7 @@ const PremiumSection = () => {
 
   return (
     <div className="bg-[#EDF1E6] py-10 px-4 md:px-0">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto container-custom">
         {/* Title */}
         <div className="text-center mb-10 mt-4 lg:mt-5 px-2 md:px-0">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold">

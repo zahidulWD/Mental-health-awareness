@@ -54,7 +54,7 @@ const Register = () => {
             {/* Submit Button */}
             <a
               type="submit"
-              className="btn bg-[#4F7100] mt-4 w-full text-white text-sm sm:text-base py-2 sm:py-3 hover:bg-[#FFC20F] hover:text-gray-800 transition-colors duration-300"
+              className="btn bg-[#4F7100] mt-4 w-full text-white text-sm sm:text-base py-2 sm:py-3 hover:bg-[#EDF1E6] hover:text-gray-800 transition-colors duration-300"
             >
               Register Now
             </a>

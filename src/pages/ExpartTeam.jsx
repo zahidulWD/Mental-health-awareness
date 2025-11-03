@@ -40,7 +40,7 @@ const ExpartTeam = () => {
   };
 
   return (
-    <section className="py-20 bg-[#EDF1E6]">
+    <section className="py-4 md:py-8 lg:py-10 bg-[#EDF1E6]">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#4F7100] uppercase">
           Meet Our <span className="text-[#FFC20F]">Expert Team</span>

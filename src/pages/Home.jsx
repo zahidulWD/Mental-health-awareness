@@ -2,6 +2,7 @@
 import Hero from '../components/Hero';
 import CustomersSaying from './CustomersSaying';
 import ExpartTeam from './ExpartTeam';
+import FAQ from './FAQ';
 import PremiumSection from './PremiumSection';
 import Supports from './Supports';
 
@@ -13,6 +14,7 @@ const Home = () => {
             <ExpartTeam></ExpartTeam>
             <CustomersSaying></CustomersSaying>
             <PremiumSection></PremiumSection>
+            <FAQ></FAQ>
         </div>
     );
 };

@@ -1,5 +1,6 @@
 
 
+import { IoIosArrowDown } from "react-icons/io";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
             </h1>
           </Link>
 
-          {/* Mobile / Tablet Menu Icon */}
+          {/* Mobile Menu */}
           <div className="lg:hidden">
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost">
@@ -25,38 +26,33 @@ const Navbar = () => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </label>
+
               <ul
                 tabIndex={0}
                 className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-orange-100/90 rounded-box w-52 backdrop-blur-md"
               >
+                <li><NavLink to="/" end className="hover:bg-transparent">Home</NavLink></li>
+                <li><NavLink to="/prices" end className="hover:bg-transparent">Prices</NavLink></li>
+                <li><NavLink to="/features" end className="hover:bg-transparent">Features</NavLink></li>
+                <li><NavLink to="/contact" end className="hover:bg-transparent">Contact</NavLink></li>
+
+                {/* Mobile Wellness Dropdown */}
                 <li>
-                  <NavLink to="/" end className="hover:bg-transparent">
-                    Home
-                  </NavLink>
+                  <details>
+                    <summary className="cursor-pointer">Wellness</summary>
+                    <ul className="pl-4 mt-2 space-y-2">
+                      <li><NavLink to="/wellness/meditation">Meditation Guides</NavLink></li>
+                      <li><NavLink to="/wellness/breathing">Breathing Exercises</NavLink></li>
+                      <li><NavLink to="/wellness/mindfulness">Mindfulness Practices</NavLink></li>
+                      <li><NavLink to="/wellness/sleep">Sleep & Relaxation</NavLink></li>
+                      <li><NavLink to="/wellness/stress">Stress Management</NavLink></li>
+                    </ul>
+                  </details>
                 </li>
-                <li>
-                  <NavLink to="/prices" end className="hover:bg-transparent">
-                    Prices
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/features" end className="hover:bg-transparent">
-                    Features
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/contact" end className="hover:bg-transparent">
-                    Contact
-                  </NavLink>
-                </li>
+
                 <li>
                   <NavLink
                     to="/register"
@@ -69,34 +65,59 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Desktop / Tablet Horizontal Menu */}
+          {/* Desktop Menu */}
           <div className="hidden lg:flex flex-1 justify-center">
             <ul className="menu menu-horizontal gap-8 items-center bg-transparent">
-              {["/", "/prices", "/features", "/contact"].map((path, index) => {
-                const names = ["Home", "Prices", "Features", "Contact"];
-                return (
-                  <li key={index} className="group bg-transparent hover:bg-transparent">
-                    <NavLink to={path} end className="hover:bg-transparent">
-                      {({ isActive }) => (
-                        <span
-                          className={`relative inline-block text-base font-medium text-gray-700 hover:text-[#4F7100] transition-colors`}
-                        >
-                          {names[index]}
-                          <span
-                            className={`absolute left-0 bottom-[-2px] h-[2px] bg-[#4F7100] transition-all duration-300 ${
-                              isActive ? "w-full" : "w-0 group-hover:w-full"
-                            }`}
-                          ></span>
-                        </span>
-                      )}
-                    </NavLink>
-                  </li>
-                );
-              })}
+              <li className="group">
+                <NavLink to="/" end className="hover:bg-transparent">
+                  <span className="relative inline-block text-base font-medium text-gray-700 hover:text-[#4F7100] transition-colors">
+                    Home
+                    <span className="absolute left-0 bottom-[-2px] h-[2px] bg-[#4F7100] w-0 group-hover:w-full transition-all"></span>
+                  </span>
+                </NavLink>
+              </li>
+              <li className="group">
+                <NavLink to="/prices" end className="hover:bg-transparent">
+                  <span className="relative inline-block text-base font-medium text-gray-700 hover:text-[#4F7100] transition-colors">
+                    Prices
+                    <span className="absolute left-0 bottom-[-2px] h-[2px] bg-[#4F7100] w-0 group-hover:w-full transition-all"></span>
+                  </span>
+                </NavLink>
+              </li>
+              <li className="group">
+                <NavLink to="/features" end className="hover:bg-transparent">
+                  <span className="relative inline-block text-base font-medium text-gray-700 hover:text-[#4F7100] transition-colors">
+                    Features
+                    <span className="absolute left-0 bottom-[-2px] h-[2px] bg-[#4F7100] w-0 group-hover:w-full transition-all"></span>
+                  </span>
+                </NavLink>
+              </li>
+              <li className="group">
+                <NavLink to="/contact" end className="hover:bg-transparent">
+                  <span className="relative inline-block text-base font-medium text-gray-700 hover:text-[#4F7100] transition-colors">
+                    Contact
+                    <span className="absolute left-0 bottom-[-2px] h-[2px] bg-[#4F7100] w-0 group-hover:w-full transition-all"></span>
+                  </span>
+                </NavLink>
+              </li>
+
+              {/* Desktop Wellness Dropdown */}
+              <NavLink className="relative group">
+                <span className="cursor-pointer flex items-center gap-1 text-base font-medium text-gray-700 hover:text-[#4F7100] transition-colors">
+                  Wellness <IoIosArrowDown />
+                </span>
+                <ul className="absolute left-0 top-full mt-2 bg-white shadow-lg rounded-lg py-2 w-48 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all">
+                  <li><NavLink to="/wellness/meditation" className="block px-4 py-2 hover:bg-[#F5F9F0] text-[#2B3E00]">Meditation Guides</NavLink></li>
+                  <li><NavLink to="/wellness/breathing" className="block px-4 py-2 hover:bg-[#F5F9F0] text-[#2B3E00]">Breathing Exercises</NavLink></li>
+                  <li><NavLink to="/wellness/mindfulness" className="block px-4 py-2 hover:bg-[#F5F9F0] text-[#2B3E00]">Mindfulness Practices</NavLink></li>
+                  <li><NavLink to="/wellness/sleep" className="block px-4 py-2 hover:bg-[#F5F9F0] text-[#2B3E00]">Sleep & Relaxation</NavLink></li>
+                  <li><NavLink to="/wellness/stress" className="block px-4 py-2 hover:bg-[#F5F9F0] text-[#2B3E00]">Stress Management</NavLink></li>
+                </ul>
+              </NavLink>
             </ul>
           </div>
 
-          {/* Desktop Register Button */}
+          {/* Desktop Register */}
           <div className="hidden lg:flex">
             <NavLink
               to="/register"

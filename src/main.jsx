@@ -13,6 +13,7 @@ import Contact from './pages/Contact.jsx';
 import PremiumSection from './pages/PremiumSection.jsx';
 import Register from './pages/Register.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
+import Wellness from './pages/Wellness.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
        {
         path: "/contact",
         element: <Contact></Contact>,
+      },
+       {
+        path: "/wellness",
+        element: <Wellness></Wellness>,
       },
        {
         path: "/register",
