@@ -37,21 +37,8 @@ const Navbar = () => {
                 <li><NavLink to="/" end className="hover:bg-transparent">Home</NavLink></li>
                 <li><NavLink to="/prices" end className="hover:bg-transparent">Prices</NavLink></li>
                 <li><NavLink to="/features" end className="hover:bg-transparent">Features</NavLink></li>
+                <li><NavLink to="/consultants" end className="hover:bg-transparent">Our Consultants</NavLink></li>
                 <li><NavLink to="/contact" end className="hover:bg-transparent">Contact</NavLink></li>
-
-                {/* Mobile Wellness Dropdown */}
-                <li>
-                  <details>
-                    <summary className="cursor-pointer">Wellness</summary>
-                    <ul className="pl-4 mt-2 space-y-2">
-                      <li><NavLink to="/wellness/meditation">Meditation Guides</NavLink></li>
-                      <li><NavLink to="/wellness/breathing">Breathing Exercises</NavLink></li>
-                      <li><NavLink to="/wellness/mindfulness">Mindfulness Practices</NavLink></li>
-                      <li><NavLink to="/wellness/sleep">Sleep & Relaxation</NavLink></li>
-                      <li><NavLink to="/wellness/stress">Stress Management</NavLink></li>
-                    </ul>
-                  </details>
-                </li>
 
                 <li>
                   <NavLink
@@ -93,6 +80,14 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="group">
+                <NavLink to="/consultants" end className="hover:bg-transparent">
+                  <span className="relative inline-block text-base font-medium text-gray-700 hover:text-[#4F7100] transition-colors">
+                    Our Consultants
+                    <span className="absolute left-0 bottom-[-2px] h-[2px] bg-[#4F7100] w-0 group-hover:w-full transition-all"></span>
+                  </span>
+                </NavLink>
+              </li>
+              <li className="group">
                 <NavLink to="/contact" end className="hover:bg-transparent">
                   <span className="relative inline-block text-base font-medium text-gray-700 hover:text-[#4F7100] transition-colors">
                     Contact
@@ -100,20 +95,6 @@ const Navbar = () => {
                   </span>
                 </NavLink>
               </li>
-
-              {/* Desktop Wellness Dropdown */}
-              <NavLink className="relative group">
-                <span className="cursor-pointer flex items-center gap-1 text-base font-medium text-gray-700 hover:text-[#4F7100] transition-colors">
-                  Wellness <IoIosArrowDown />
-                </span>
-                <ul className="absolute left-0 top-full mt-2 bg-white shadow-lg rounded-lg py-2 w-48 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all">
-                  <li><NavLink to="/wellness/meditation" className="block px-4 py-2 hover:bg-[#F5F9F0] text-[#2B3E00]">Meditation Guides</NavLink></li>
-                  <li><NavLink to="/wellness/breathing" className="block px-4 py-2 hover:bg-[#F5F9F0] text-[#2B3E00]">Breathing Exercises</NavLink></li>
-                  <li><NavLink to="/wellness/mindfulness" className="block px-4 py-2 hover:bg-[#F5F9F0] text-[#2B3E00]">Mindfulness Practices</NavLink></li>
-                  <li><NavLink to="/wellness/sleep" className="block px-4 py-2 hover:bg-[#F5F9F0] text-[#2B3E00]">Sleep & Relaxation</NavLink></li>
-                  <li><NavLink to="/wellness/stress" className="block px-4 py-2 hover:bg-[#F5F9F0] text-[#2B3E00]">Stress Management</NavLink></li>
-                </ul>
-              </NavLink>
             </ul>
           </div>
 

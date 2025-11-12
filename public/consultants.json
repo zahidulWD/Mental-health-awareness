@@ -1,0 +1,543 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Nabila Rahman",
+    "role": "Clinical Psychologist",
+    "img": "https://i.ibb.co/yFQN12Jj/images.jpg",
+    "experience": "10 years",
+    "specialization": "Cognitive Therapy",
+    "rating": 5,
+    "contact": {
+      "email": "nabila@example.com",
+      "phone": "+880123456789"
+    },
+    "bio": "Dr. Nabila Rahman is a licensed clinical psychologist specializing in cognitive therapy and mental wellness for adults and adolescents.",
+    "qualifications": ["PhD in Clinical Psychology", "MSc in Counseling Psychology"],
+    "linkedin": "https://www.linkedin.com/in/nabila-rahman",
+    "location": "Dhaka, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "9:00 AM - 2:00 PM",
+      "Tuesday": "Not available",
+      "Wednesday": "1:00 PM - 5:00 PM",
+      "Thursday": "9:00 AM - 2:00 PM",
+      "Friday": "9:00 AM - 1:00 PM",
+      "Saturday": "By Appointment",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Arif Hossain",
+    "role": "Mental Health Counselor",
+    "img": "https://i.ibb.co/fmpSZ9T/1691331962-730.png",
+    "experience": "5 years",
+    "specialization": "Stress & Anxiety",
+    "rating": 4,
+    "contact": {
+      "email": "arif@example.com",
+      "phone": "+880987654321"
+    },
+    "bio": "Arif Hossain provides counseling and support for managing stress and anxiety, focusing on holistic mental health strategies.",
+    "qualifications": ["MSc in Psychology", "Certified Stress Management Coach"],
+    "linkedin": "https://www.linkedin.com/in/arif-hossain",
+    "location": "Chittagong, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "By Appointment",
+      "Tuesday": "10:00 AM - 4:00 PM",
+      "Wednesday": "Not available",
+      "Thursday": "12:00 PM - 5:00 PM",
+      "Friday": "9:00 AM - 1:00 PM",
+      "Saturday": "Not available",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Dr. Mehedi Hasan",
+    "role": "Psychiatrist",
+    "img": "https://i.ibb.co/ksmrXhjY/mehedi.webp",
+    "experience": "8 years",
+    "specialization": "Adult Psychiatry",
+    "rating": 5,
+    "contact": {
+      "email": "mehedi@example.com",
+      "phone": "+8801122334455"
+    },
+    "bio": "Dr. Mehedi Hasan focuses on adult psychiatry, providing medical and therapeutic support for mental disorders.",
+    "qualifications": ["MD in Psychiatry", "Certified Cognitive Behavioral Therapist"],
+    "linkedin": "https://www.linkedin.com/in/mehedi-hasan",
+    "location": "Sylhet, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "10:00 AM - 3:00 PM",
+      "Tuesday": "10:00 AM - 3:00 PM",
+      "Wednesday": "By Appointment",
+      "Thursday": "Not available",
+      "Friday": "10:00 AM - 2:00 PM",
+      "Saturday": "By Appointment",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Sadia Ayman",
+    "role": "Clinical Psychologist",
+    "img": "https://i.ibb.co.com/pvQ46HNt/Dr-Sadia-Malick-pic.webp",
+    "experience": "6 years",
+    "specialization": "Child & Adolescent Therapy",
+    "rating": 5,
+    "contact": {
+      "email": "sadia@example.com",
+      "phone": "+8806677889900"
+    },
+    "bio": "Sadia Ayman works with children and adolescents to promote emotional well-being and mental health awareness.",
+    "qualifications": ["MSc in Clinical Psychology", "Certified Child Therapist"],
+    "linkedin": "https://www.linkedin.com/in/sadia-ayman",
+    "location": "Dhaka, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "9:00 AM - 1:00 PM",
+      "Tuesday": "10:00 AM - 2:00 PM",
+      "Wednesday": "By Appointment",
+      "Thursday": "Not available",
+      "Friday": "9:00 AM - 1:00 PM",
+      "Saturday": "10:00 AM - 2:00 PM",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Rahim Uddin",
+    "role": "School Counselor",
+    "img": "https://i.ibb.co.com/GQpJPcqj/images.jpg",
+    "experience": "7 years",
+    "specialization": "Educational Counseling",
+    "rating": 4,
+    "contact": {
+      "email": "rahim@example.com",
+      "phone": "+8802233445566"
+    },
+    "bio": "Rahim Uddin helps students manage stress and academic challenges through counseling and support.",
+    "qualifications": ["MSc in Educational Psychology", "Certified School Counselor"],
+    "linkedin": "https://www.linkedin.com/in/rahim-uddin",
+    "location": "Khulna, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "9:00 AM - 1:00 PM",
+      "Tuesday": "Not available",
+      "Wednesday": "10:00 AM - 3:00 PM",
+      "Thursday": "By Appointment",
+      "Friday": "9:00 AM - 1:00 PM",
+      "Saturday": "Not available",
+      "Sunday": "Not available"
+    }
+  },
+    {
+    "id": 6,
+    "name": "Dr. Farzana Ahmed",
+    "role": "Psychiatrist",
+    "img": "https://i.ibb.co.com/WpxK9DMs/92dd4085-6c3c-40c4-a8bc-d44d44613bf8.jpg",
+    "experience": "9 years",
+    "specialization": "Mood Disorders",
+    "rating": 5,
+    "contact": {
+      "email": "farzana@example.com",
+      "phone": "+8803344556677"
+    },
+    "bio": "Dr. Farzana Ahmed specializes in mood disorders, helping patients with depression and bipolar conditions.",
+    "qualifications": ["MD in Psychiatry", "Certified CBT Therapist"],
+    "linkedin": "https://www.linkedin.com/in/farzana-ahmed",
+    "location": "Dhaka, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "10:00 AM - 3:00 PM",
+      "Tuesday": "By Appointment",
+      "Wednesday": "10:00 AM - 2:00 PM",
+      "Thursday": "Not available",
+      "Friday": "10:00 AM - 2:00 PM",
+      "Saturday": "By Appointment",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Dr. Kamal Hossain",
+    "role": "Clinical Psychologist",
+    "img": "https://i.ibb.co.com/FkTS6pmn/images.jpg",
+    "experience": "8 years",
+    "specialization": "Behavioral Therapy",
+    "rating": 5,
+    "contact": {
+      "email": "kamal@example.com",
+      "phone": "+8804455667788"
+    },
+    "bio": "Dr. Kamal Hossain provides behavioral therapy for adults and adolescents to improve coping mechanisms.",
+    "qualifications": ["PhD in Clinical Psychology", "Certified Behavioral Therapist"],
+    "linkedin": "https://www.linkedin.com/in/kamal-hossain",
+    "location": "Chittagong, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "By Appointment",
+      "Tuesday": "9:00 AM - 2:00 PM",
+      "Wednesday": "10:00 AM - 3:00 PM",
+      "Thursday": "By Appointment",
+      "Friday": "9:00 AM - 1:00 PM",
+      "Saturday": "Not available",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Sufia Rahman",
+    "role": "Mental Health Counselor",
+    "img": "https://i.ibb.co.com/LzRZ10Cx/Dr-Farzana-Zulfia-Khan.jpg",
+    "experience": "6 years",
+    "specialization": "Anxiety & Stress Management",
+    "rating": 4,
+    "contact": {
+      "email": "sufia@example.com",
+      "phone": "+8805566778899"
+    },
+    "bio": "Sufia Rahman assists clients in managing anxiety and stress through holistic counseling approaches.",
+    "qualifications": ["MSc in Psychology", "Certified Stress Management Coach"],
+    "linkedin": "https://www.linkedin.com/in/sufia-rahman",
+    "location": "Rajshahi, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "10:00 AM - 2:00 PM",
+      "Tuesday": "10:00 AM - 3:00 PM",
+      "Wednesday": "By Appointment",
+      "Thursday": "9:00 AM - 2:00 PM",
+      "Friday": "Not available",
+      "Saturday": "By Appointment",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Dr. Rafiq Alam",
+    "role": "Clinical Psychologist",
+    "img": "https://i.ibb.co.com/N6rgM9Q1/endocrinologist-md-rafiq-uddin-chattogram-photo.webp",
+    "experience": "7 years",
+    "specialization": "Trauma Therapy",
+    "rating": 5,
+    "contact": {
+      "email": "rafiq@example.com",
+      "phone": "+8806677889901"
+    },
+    "bio": "Dr. Rafiq Alam works with trauma survivors, providing therapy and support to help rebuild mental health.",
+    "qualifications": ["PhD in Clinical Psychology", "Certified Trauma Therapist"],
+    "linkedin": "https://www.linkedin.com/in/rafiq-alam",
+    "location": "Sylhet, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "9:00 AM - 2:00 PM",
+      "Tuesday": "By Appointment",
+      "Wednesday": "10:00 AM - 3:00 PM",
+      "Thursday": "10:00 AM - 2:00 PM",
+      "Friday": "By Appointment",
+      "Saturday": "Not available",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Laila Khan",
+    "role": "Mental Health Counselor",
+    "img": "https://i.ibb.co.com/Y779P1r1/320x400.jpg",
+    "experience": "5 years",
+    "specialization": "Family & Relationship Therapy",
+    "rating": 3.5,
+    "contact": {
+      "email": "laila@example.com",
+      "phone": "+8807788990011"
+    },
+    "bio": "Laila Khan specializes in family and relationship counseling, helping clients build healthier connections.",
+    "qualifications": ["MSc in Counseling Psychology", "Certified Family Therapist"],
+    "linkedin": "https://www.linkedin.com/in/laila-khan",
+    "location": "Dhaka, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "10:00 AM - 3:00 PM",
+      "Tuesday": "By Appointment",
+      "Wednesday": "10:00 AM - 2:00 PM",
+      "Thursday": "10:00 AM - 3:00 PM",
+      "Friday": "Not available",
+      "Saturday": "By Appointment",
+      "Sunday": "Not available"
+    }
+  },
+    {
+    "id": 11,
+    "name": "Dr. Tanvir Hossain",
+    "role": "Clinical Psychologist",
+    "img": "https://i.ibb.co.com/6JRM0tGh/images.jpg",
+    "experience": "8 years",
+    "specialization": "Cognitive Behavioral Therapy",
+    "rating": 5,
+    "contact": {
+      "email": "tanvir@example.com",
+      "phone": "+8808899001122"
+    },
+    "bio": "Dr. Tanvir Hossain specializes in CBT for adults and adolescents, helping clients manage anxiety and depression.",
+    "qualifications": ["PhD in Clinical Psychology", "Certified CBT Therapist"],
+    "linkedin": "https://www.linkedin.com/in/tanvir-hossain",
+    "location": "Khulna, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "10:00 AM - 3:00 PM",
+      "Tuesday": "By Appointment",
+      "Wednesday": "9:00 AM - 2:00 PM",
+      "Thursday": "10:00 AM - 2:00 PM",
+      "Friday": "By Appointment",
+      "Saturday": "Not available",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Dr. Meherun Nesa",
+    "role": "Mental Health Counselor",
+    "img": "https://i.ibb.co.com/KckrQ6bt/Dr-Nusrat-jahan-MBBSAR-Medicine.png",
+    "experience": "6 years",
+    "specialization": "Adolescent Therapy",
+    "rating": 4,
+    "contact": {
+      "email": "meherun@example.com",
+      "phone": "+8809900112233"
+    },
+    "bio": "Dr. Meherun Nesa focuses on adolescent mental health, supporting young clients in coping with stress and school pressures.",
+    "qualifications": ["MSc in Psychology", "Certified Adolescent Counselor"],
+    "linkedin": "https://www.linkedin.com/in/meherun-nesa",
+    "location": "Dhaka, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "By Appointment",
+      "Tuesday": "10:00 AM - 2:00 PM",
+      "Wednesday": "10:00 AM - 3:00 PM",
+      "Thursday": "By Appointment",
+      "Friday": "9:00 AM - 1:00 PM",
+      "Saturday": "By Appointment",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Dr. Shakil Ahmed",
+    "role": "Psychiatrist",
+    "img": "https://i.ibb.co.com/Zp7qd39D/jhj.jpg",
+    "experience": "10 years",
+    "specialization": "Depression & Anxiety",
+    "rating": 5,
+    "contact": {
+      "email": "shakil@example.com",
+      "phone": "+8801122334455"
+    },
+    "bio": "Dr. Shakil Ahmed treats patients with depression and anxiety using a mix of therapy and medication management.",
+    "qualifications": ["MD in Psychiatry", "Certified CBT Therapist"],
+    "linkedin": "https://www.linkedin.com/in/shakil-ahmed",
+    "location": "Chittagong, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "10:00 AM - 3:00 PM",
+      "Tuesday": "By Appointment",
+      "Wednesday": "10:00 AM - 2:00 PM",
+      "Thursday": "9:00 AM - 1:00 PM",
+      "Friday": "By Appointment",
+      "Saturday": "Not available",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Fariha Islam",
+    "role": "Mental Health Counselor",
+    "img": "https://i.ibb.co.com/mkJp8qt/1726720938804.jpg",
+    "experience": "5 years",
+    "specialization": "Family Counseling",
+    "rating": 4.5,
+    "contact": {
+      "email": "fariha@example.com",
+      "phone": "+8802233445566"
+    },
+    "bio": "Fariha Islam provides family counseling services, focusing on building healthier relationships at home.",
+    "qualifications": ["MSc in Counseling Psychology", "Certified Family Therapist"],
+    "linkedin": "https://www.linkedin.com/in/fariha-islam",
+    "location": "Rajshahi, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "By Appointment",
+      "Tuesday": "10:00 AM - 2:00 PM",
+      "Wednesday": "10:00 AM - 3:00 PM",
+      "Thursday": "By Appointment",
+      "Friday": "Not available",
+      "Saturday": "10:00 AM - 1:00 PM",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Dr. Imran Karim",
+    "role": "Clinical Psychologist",
+    "img": "https://i.ibb.co.com/27chKXqp/hjghgh.gif",
+    "experience": "7 years",
+    "specialization": "Trauma & PTSD",
+    "rating": 5,
+    "contact": {
+      "email": "imran@example.com",
+      "phone": "+8803344556677"
+    },
+    "bio": "Dr. Imran Karim works with trauma survivors and PTSD patients, helping them recover mental stability and confidence.",
+    "qualifications": ["PhD in Clinical Psychology", "Certified Trauma Therapist"],
+    "linkedin": "https://www.linkedin.com/in/imran-karim",
+    "location": "Sylhet, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "9:00 AM - 2:00 PM",
+      "Tuesday": "10:00 AM - 3:00 PM",
+      "Wednesday": "By Appointment",
+      "Thursday": "9:00 AM - 1:00 PM",
+      "Friday": "By Appointment",
+      "Saturday": "Not available",
+      "Sunday": "Not available"
+    }
+  },
+    {
+    "id": 16,
+    "name": "Dr. Rasheda Akter",
+    "role": "Mental Health Counselor",
+    "img": "https://i.ibb.co.com/0RF95c4D/Dr-Tahmina-Begum-Poly.jpg",
+    "experience": "6 years",
+    "specialization": "Stress & Anxiety",
+    "rating": 3.5,
+    "contact": {
+      "email": "rasheda@example.com",
+      "phone": "+8804455667788"
+    },
+    "bio": "Dr. Rasheda Akter provides counseling for stress and anxiety, focusing on holistic mental wellness.",
+    "qualifications": ["MSc in Psychology", "Certified Stress Management Coach"],
+    "linkedin": "https://www.linkedin.com/in/rasheda-akter",
+    "location": "Dhaka, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "10:00 AM - 2:00 PM",
+      "Tuesday": "By Appointment",
+      "Wednesday": "9:00 AM - 1:00 PM",
+      "Thursday": "10:00 AM - 3:00 PM",
+      "Friday": "By Appointment",
+      "Saturday": "Not available",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Dr. Farhana Sultana",
+    "role": "Clinical Psychologist",
+    "img": "https://i.ibb.co.com/b5v1Z0hc/images.jpg",
+    "experience": "9 years",
+    "specialization": "Child & Adolescent Therapy",
+    "rating": 5,
+    "contact": {
+      "email": "farhana@example.com",
+      "phone": "+8805566778899"
+    },
+    "bio": "Dr. Farhana Sultana specializes in therapy for children and adolescents, helping them develop emotional resilience.",
+    "qualifications": ["PhD in Clinical Psychology", "Certified Child Therapist"],
+    "linkedin": "https://www.linkedin.com/in/farhana-sultana",
+    "location": "Chittagong, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "9:00 AM - 1:00 PM",
+      "Tuesday": "10:00 AM - 3:00 PM",
+      "Wednesday": "By Appointment",
+      "Thursday": "9:00 AM - 2:00 PM",
+      "Friday": "By Appointment",
+      "Saturday": "Not available",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Md. Saiful Islam",
+    "role": "Mental Health Counselor",
+    "img": "https://i.ibb.co.com/v6ktKfCp/dr-md-saiful-islam.jpg",
+    "experience": "7 years",
+    "specialization": "Workplace Stress",
+    "rating": 4,
+    "contact": {
+      "email": "saiful@example.com",
+      "phone": "+8806677889900"
+    },
+    "bio": "Md. Saiful Islam helps professionals manage workplace stress and maintain mental well-being.",
+    "qualifications": ["MSc in Counseling Psychology", "Certified Workplace Counselor"],
+    "linkedin": "https://www.linkedin.com/in/saiful-islam",
+    "location": "Dhaka, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "By Appointment",
+      "Tuesday": "10:00 AM - 2:00 PM",
+      "Wednesday": "10:00 AM - 3:00 PM",
+      "Thursday": "By Appointment",
+      "Friday": "9:00 AM - 1:00 PM",
+      "Saturday": "Not available",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Dr. Monira Chowdhury",
+    "role": "Clinical Psychologist",
+    "img": "https://i.ibb.co.com/0yZp40Hp/65b9ae7d3bc00.gif",
+    "experience": "8 years",
+    "specialization": "Trauma & PTSD",
+    "rating": 3.5,
+    "contact": {
+      "email": "monira@example.com",
+      "phone": "+8807788990011"
+    },
+    "bio": "Dr. Monira Chowdhury specializes in trauma and PTSD, helping patients recover emotional stability.",
+    "qualifications": ["PhD in Clinical Psychology", "Certified Trauma Therapist"],
+    "linkedin": "https://www.linkedin.com/in/monira-chowdhury",
+    "location": "Sylhet, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "9:00 AM - 2:00 PM",
+      "Tuesday": "By Appointment",
+      "Wednesday": "10:00 AM - 3:00 PM",
+      "Thursday": "By Appointment",
+      "Friday": "9:00 AM - 1:00 PM",
+      "Saturday": "Not available",
+      "Sunday": "Not available"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Fahim Rahman",
+    "role": "Mental Health Counselor",
+    "img": "https://i.ibb.co.com/0yRYXgsG/Dr-Md-Faizur-Rahman-Fahim.jpg",
+    "experience": "6 years",
+    "specialization": "Stress & Anxiety",
+    "rating": 4,
+    "contact": {
+      "email": "fahim@example.com",
+      "phone": "+8808899001122"
+    },
+    "bio": "Fahim Rahman provides counseling for stress and anxiety management, with a holistic mental health approach.",
+    "qualifications": ["MSc in Psychology", "Certified Stress Management Coach"],
+    "linkedin": "https://www.linkedin.com/in/fahim-rahman",
+    "location": "Khulna, Bangladesh",
+    "languages": ["English", "Bengali"],
+    "availability": {
+      "Monday": "10:00 AM - 2:00 PM",
+      "Tuesday": "By Appointment",
+      "Wednesday": "9:00 AM - 1:00 PM",
+      "Thursday": "10:00 AM - 3:00 PM",
+      "Friday": "By Appointment",
+      "Saturday": "Not available",
+      "Sunday": "Not available"
+    }
+  }
+
+]

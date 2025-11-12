@@ -1,44 +1,51 @@
+
 [
   {
     "id": 1,
     "name": "Dr. Nabila Rahman",
     "role": "Clinical Psychologist",
     "img": "https://i.ibb.co.com/yFQN12Jj/images.jpg",
-    "text": "MindNest সত্যিই আমার ক্লায়েন্টদের সাথে connect করতে সাহায্য করছে। Awareness, empathy, এবং hope প্রতিটি মানুষের জন্য আছে।"
+    "text": "MindNest সত্যিই আমার ক্লায়েন্টদের সাথে connect করতে সাহায্য করছে। Awareness, empathy, এবং hope প্রতিটি মানুষের জন্য আছে।",
+    "rating": 5
   },
   {
     "id": 2,
     "name": "Arif Hossain",
     "role": "University Student",
     "img": "https://i.ibb.co.com/fmpSZ9T/1691331962-730.png",
-    "text": "MindNest-এর resources ব্যবহার করে আমি stress এবং anxiety manage করতে শিখেছি। এটা এমন এক friend এর মত, যে সত্যিই বোঝে।"
+    "text": "MindNest-এর resources ব্যবহার করে আমি stress এবং anxiety manage করতে শিখেছি। এটা এমন এক friend এর মত, যে সত্যিই বোঝে।",
+    "rating": 4
   },
   {
     "id": 3,
     "name": "Dr. Mehedi Hasan",
     "role": "Mental Health Counselor",
     "img": "https://i.ibb.co.com/ksmrXhjY/mehedi.webp",
-    "text": "MindNest-এর focus on community healing অসাধারণ। এটা মনে করায় mental well-being একটি journey, not just a destination."
+    "text": "MindNest-এর focus on community healing অসাধারণ। এটা মনে করায় mental well-being একটি journey, not just a destination.",
+    "rating": 5
   },
   {
     "id": 4,
     "name": "Sadia Ayman",
     "role": "Social Worker",
     "img": "https://i.ibb.co.com/0yWBLvtM/1907645b49ee82f17069922fc6b481d9.jpg",
-    "text": "MindNest awareness তৈরি করে এমনভাবে, যা heart-touching। Mental health conversations এখন open, normal এবং compassionate।"
+    "text": "MindNest awareness তৈরি করে এমনভাবে, যা heart-touching। Mental health conversations এখন open, normal এবং compassionate।",
+    "rating": 4
   },
   {
     "id": 5,
     "name": "Rahim Uddin",
     "role": "Teacher",
     "img": "https://i.ibb.co.com/FqwG1WqB/images.jpg",
-    "text": "আমি MindNest-এর tips classroom-এ ব্যবহার করছি যাতে students নিরাপদ এবং understood feel করে। এটা আমাদের সমাজের জন্য শক্তিশালী initiative।"
+    "text": "আমি MindNest-এর tips classroom-এ ব্যবহার করছি যাতে students নিরাপদ এবং understood feel করে। এটা আমাদের সমাজের জন্য শক্তিশালী initiative।",
+    "rating": 5
   },
   {
     "id": 6,
     "name": "Dr. Farzana Ahmed",
     "role": "Psychiatrist",
     "img": "https://i.ibb.co.com/wNG3dhyd/Dr-Raihana-Ahmed.jpg",
-    "text": "MindNest science এবং compassion একসাথে নিয়ে এসেছে। এটা এমন একটি space যা সত্যিই emotional healing এবং awareness promote করে।"
+    "text": "MindNest science এবং compassion একসাথে নিয়ে এসেছে। এটা এমন একটি space যা সত্যিই emotional healing এবং awareness promote করে।",
+    "rating": 5
   }
 ]
