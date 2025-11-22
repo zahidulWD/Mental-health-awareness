@@ -11,9 +11,12 @@ import Home from './pages/Home.jsx';
 import Features from './pages/Features.jsx';
 import Contact from './pages/Contact.jsx';
 import PremiumSection from './pages/PremiumSection.jsx';
-import Register from './pages/Register.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import Consultants from './pages/Consultants.jsx';
+import AppProvider from './context/AppContext.jsx';
+import Appointment from './pages/Appointment.jsx';
+import PrivateRoute from './PrivateRoute/PrivateRoute.jsx';
+import Login from './pages/Login.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,8 +44,14 @@ const router = createBrowserRouter([
         element: <Contact></Contact>,
       },
       {
-        path: "/register",
-        element: <Register></Register>,
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/appointment",
+        element: <PrivateRoute>
+          <Appointment></Appointment>
+        </PrivateRoute>
       },
     ],
   },
@@ -50,6 +59,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-     <RouterProvider router={router} />
+     <AppProvider>
+      <RouterProvider router={router} />
+     </AppProvider>
   </StrictMode>,
 )

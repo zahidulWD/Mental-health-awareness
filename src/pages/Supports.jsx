@@ -63,7 +63,7 @@ const Supports = () => {
         </div>
 
         {/* Step 1: Awareness */}
-        <section className="py-12 px-4 sm:px-6 md:px-10 lg:px-20">
+        <section className="py-12 px-4 sm:px-6 md:px-10 lg:px-20 overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
             <div
               className="order-2 lg:order-1 text-center lg:text-left"

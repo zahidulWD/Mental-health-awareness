@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useState } from "react";
 import {
   FaMapMarkerAlt,
@@ -9,6 +7,7 @@ import {
   FaStar,
   FaUserCheck,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Consultants = () => {
   const [consultants, setConsultants] = useState([]);
@@ -19,7 +18,7 @@ const Consultants = () => {
     language: "All",
   });
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [showAll, setShowAll] = useState(false); 
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     fetch("/consultants.json")
@@ -39,25 +38,36 @@ const Consultants = () => {
       result = result.filter((c) => c.location === filters.location);
     }
     if (filters.specialization !== "All") {
-      result = result.filter((c) => c.specialization === filters.specialization);
+      result = result.filter(
+        (c) => c.specialization === filters.specialization
+      );
     }
     if (filters.language !== "All") {
       result = result.filter((c) => c.languages.includes(filters.language));
     }
 
     setFiltered(result);
-    setShowAll(false); 
+    setShowAll(false);
   }, [filters, consultants]);
 
   const handleFilterChange = (type, value) => {
     setFilters((prev) => ({ ...prev, [type]: value }));
   };
 
-  const uniqueLocations = ["All", ...new Set(consultants.map((c) => c.location))];
-  const uniqueSpecializations = ["All", ...new Set(consultants.map((c) => c.specialization))];
-  const uniqueLanguages = ["All", ...new Set(consultants.flatMap((c) => c.languages))];
+  const uniqueLocations = [
+    "All",
+    ...new Set(consultants.map((c) => c.location)),
+  ];
+  const uniqueSpecializations = [
+    "All",
+    ...new Set(consultants.map((c) => c.specialization)),
+  ];
+  const uniqueLanguages = [
+    "All",
+    ...new Set(consultants.flatMap((c) => c.languages)),
+  ];
 
-  const displayedConsultants = showAll ? filtered : filtered.slice(0, 6); 
+  const displayedConsultants = showAll ? filtered : filtered.slice(0, 6);
   return (
     <section className="bg-gradient-to-b from-[#F4F8EE] to-white py-16 px-4 sm:px-8 lg:px-10 transition-all duration-300">
       {/* Header */}
@@ -92,7 +102,9 @@ const Consultants = () => {
           >
             {/* Close Button */}
             <div className="flex justify-between items-center mb-5 lg:hidden">
-              <h3 className="font-semibold text-lg text-[#4F7100]">Select Consultant</h3>
+              <h3 className="font-semibold text-lg text-[#4F7100]">
+                Select Consultant
+              </h3>
               <button
                 onClick={() => setDrawerOpen(false)}
                 className="text-gray-500 text-2xl font-bold"
@@ -108,7 +120,9 @@ const Consultants = () => {
                 <select
                   className="select select-bordered w-full bg-[#F9FBF4] focus:outline-none border-gray-300"
                   value={filters.location}
-                  onChange={(e) => handleFilterChange("location", e.target.value)}
+                  onChange={(e) =>
+                    handleFilterChange("location", e.target.value)
+                  }
                 >
                   {uniqueLocations.map((loc, i) => (
                     <option key={i} value={loc}>
@@ -120,11 +134,15 @@ const Consultants = () => {
 
               {/* Specialization Filter */}
               <div>
-                <h4 className="font-semibold text-[#4F7100] mb-2">Specialization</h4>
+                <h4 className="font-semibold text-[#4F7100] mb-2">
+                  Specialization
+                </h4>
                 <select
                   className="select select-bordered w-full bg-[#F9FBF4] focus:outline-none border-gray-300"
                   value={filters.specialization}
-                  onChange={(e) => handleFilterChange("specialization", e.target.value)}
+                  onChange={(e) =>
+                    handleFilterChange("specialization", e.target.value)
+                  }
                 >
                   {uniqueSpecializations.map((spec, i) => (
                     <option key={i} value={spec}>
@@ -140,7 +158,9 @@ const Consultants = () => {
                 <select
                   className="select select-bordered w-full bg-[#F9FBF4] focus:outline-none border-gray-300"
                   value={filters.language}
-                  onChange={(e) => handleFilterChange("language", e.target.value)}
+                  onChange={(e) =>
+                    handleFilterChange("language", e.target.value)
+                  }
                 >
                   {uniqueLanguages.map((lang, i) => (
                     <option key={i} value={lang}>
@@ -154,7 +174,11 @@ const Consultants = () => {
               <button
                 className="w-full mt-3 bg-[#FFC20F] text-[#4F7100] font-semibold py-2 rounded-full hover:bg-[#eab308] transition"
                 onClick={() =>
-                  setFilters({ location: "All", specialization: "All", language: "All" })
+                  setFilters({
+                    location: "All",
+                    specialization: "All",
+                    language: "All",
+                  })
                 }
               >
                 Showing all consultants
@@ -184,7 +208,11 @@ const Consultants = () => {
                 className="bg-white shadow-md hover:shadow-2xl rounded-2xl overflow-hidden border border-gray-100 transition-transform duration-300 hover:-translate-y-1 flex flex-col"
               >
                 <div className="relative">
-                  <img src={c.img} alt={c.name} className="w-full h-60 object-cover" />
+                  <img
+                    src={c.img}
+                    alt={c.name}
+                    className="w-full h-60 object-cover"
+                  />
                   <div className="absolute top-3 right-3 bg-white/95 px-2 py-1 rounded-full flex items-center gap-1 text-[#FFC20F] text-sm font-semibold shadow-md">
                     <FaStar className="text-[#FFC20F]" /> {c.rating}
                   </div>
@@ -192,16 +220,24 @@ const Consultants = () => {
 
                 <div className="p-5 flex flex-col justify-between grow">
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800">{c.name}</h3>
-                    <p className="text-[#4F7100] font-medium text-sm mb-2">{c.role}</p>
-                    <p className="text-gray-600 text-sm line-clamp-3">{c.bio}</p>
+                    <h3 className="text-lg font-semibold text-gray-800">
+                      {c.name}
+                    </h3>
+                    <p className="text-[#4F7100] font-medium text-sm mb-2">
+                      {c.role}
+                    </p>
+                    <p className="text-gray-600 text-sm line-clamp-3">
+                      {c.bio}
+                    </p>
 
                     <div className="text-sm text-gray-700 space-y-1 mt-3">
                       <p className="flex items-center gap-2">
-                        <FaMapMarkerAlt className="text-[#4F7100]" /> {c.location}
+                        <FaMapMarkerAlt className="text-[#4F7100]" />{" "}
+                        {c.location}
                       </p>
                       <p className="flex items-center gap-2">
-                        <FaEnvelope className="text-[#4F7100]" /> {c.contact.email}
+                        <FaEnvelope className="text-[#4F7100]" />{" "}
+                        {c.contact.email}
                       </p>
                       <p className="flex items-center gap-2">
                         <FaPhone className="text-[#4F7100]" /> {c.contact.phone}
@@ -209,21 +245,23 @@ const Consultants = () => {
                       <p className="flex items-center gap-2">
                         <FaCalendarAlt className="text-[#4F7100]" />{" "}
                         {Object.keys(c.availability)
-                          .filter((day) => c.availability[day] !== "Not available")
+                          .filter(
+                            (day) => c.availability[day] !== "Not available"
+                          )
                           .slice(0, 2)
                           .join(", ")}
                       </p>
                     </div>
                   </div>
 
-                  <a
-                    href={c.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block mt-5 text-center text-sm font-medium text-white bg-[#4F7100] hover:bg-[#3C5700] rounded-full px-5 py-2 transition-all duration-300"
-                  >
-                    View Profile
-                  </a>
+                  <div className="mt-6 text-center">
+                    <Link
+                      to={`/appointment?consultant=${c.id}`}
+                      className="btn bg-[#4F7100] w-3/4 text-white uppercase"
+                    >
+                      Appointment Now
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))

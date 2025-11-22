@@ -6,6 +6,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { FaTimes, FaGraduationCap, FaClock, FaLanguage, FaUserTie, FaCheckCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ExpartTeam = () => {
   const [teamMembers, setTeamMembers] = useState([]);
@@ -34,10 +35,6 @@ const ExpartTeam = () => {
     );
   }
 
-  // Appointment handler
-  const handleAppointment = (member) => {
-    window.location.href = "/register";
-  };
 
   return (
     <section className="py-4 md:py-8 lg:py-10 bg-[#EDF1E6]">
@@ -141,12 +138,11 @@ const ExpartTeam = () => {
             </div>
 
             <div className="mt-6 text-center">
-              <button
+              <Link to={"/appointment"}
                 className="btn bg-[#4F7100] w-3/4 text-white uppercase"
-                onClick={() => handleAppointment(selectedMember)}
               >
                 Appointment Now
-              </button>
+              </Link>
             </div>
           </div>
         </dialog>

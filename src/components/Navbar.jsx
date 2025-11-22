@@ -1,9 +1,14 @@
 
 
+import { useContext } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link, NavLink } from "react-router-dom";
+import { AppContext } from "../context/AppContext";
 
 const Navbar = () => {
+
+  const { user, logout } = useContext(AppContext);
+
   return (
     <div className="sticky top-0 z-50 bg-[#FDF1DA]/90 shadow-md backdrop-blur-lg transition-all duration-300">
       <div className="container-custom">
@@ -17,7 +22,31 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           <div className="lg:hidden">
+            {
+                user ? (
+                  <div className="dropdown">
+                    <div tabIndex={0} role="button" className="btn m-1">{user.email[0].toUpperCase()}</div>
+                    <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-30 p-2 shadow-sm right-0">
+                        <li>
+                            {user.email}
+                        </li>
+                        <li>
+                            <button onClick={logout} className='btn text-white bg-red-600'>Logout</button>
+                        </li>
+                    </ul>
+                </div>
+                ) : (
+                  <NavLink
+                    to="/login"
+                    className="btn bg-[#4F7100] text-white rounded-3xl font-semibold px-6"
+                  >
+                  Login
+                  </NavLink>
+                )
+              }
             <div className="dropdown dropdown-end">
+
+              
               <label tabIndex={0} className="btn btn-ghost">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -29,6 +58,7 @@ const Navbar = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </label>
+              
 
               <ul
                 tabIndex={0}
@@ -39,15 +69,6 @@ const Navbar = () => {
                 <li><NavLink to="/features" end className="hover:bg-transparent">Features</NavLink></li>
                 <li><NavLink to="/consultants" end className="hover:bg-transparent">Our Consultants</NavLink></li>
                 <li><NavLink to="/contact" end className="hover:bg-transparent">Contact</NavLink></li>
-
-                <li>
-                  <NavLink
-                    to="/register"
-                    className="btn bg-[#4F7100] text-white rounded-3xl font-semibold mt-2"
-                  >
-                    Register now
-                  </NavLink>
-                </li>
               </ul>
             </div>
           </div>
@@ -98,14 +119,30 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Desktop Register */}
+          {/* Desktop Login */}
           <div className="hidden lg:flex">
-            <NavLink
-              to="/register"
-              className="btn bg-[#4F7100] text-white rounded-3xl font-semibold px-6"
-            >
-              Register now
-            </NavLink>
+            {
+              user ? (
+                <div className="dropdown">
+                  <div tabIndex={0} role="button" className="btn m-1">{user.email[0].toUpperCase()}</div>
+                  <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-30 p-2 shadow-sm right-0p">
+                      <li>
+                          {user.email}
+                      </li>
+                      <li>
+                          <button onClick={logout} className='btn text-white bg-red-600'>Logout</button>
+                      </li>
+                  </ul>
+              </div>
+              ) : (
+                <NavLink
+                  to="/login"
+                  className="btn bg-[#4F7100] text-white rounded-3xl font-semibold px-6"
+                >
+                Login
+                </NavLink>
+              )
+            }
           </div>
         </div>
       </div>
@@ -114,3 +151,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
